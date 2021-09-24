@@ -1,0 +1,105 @@
+#app {
+  $greenBorder: 1px solid $green;
+  $sideBarTitleHeight: 30px;
+  background-color:#EEF0F4;
+  .app-header {
+    background-color: $write;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    padding: 0 $padding20;
+    color: #2A343C;
+    overflow: hidden;
+  }
+
+  .main-container {
+    height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+    transition: margin-left .28s;
+    margin-left: $sideBarWidth + $pageSpace;
+    position: relative;
+
+      .app-main {
+        height: calc(100vh - #{$headerHeight} - #{$footerHeight} - #{$tagBarHeight});
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        //border: $greenBorder;
+        //margin-top: 5px;
+      }
+  }
+
+  .app-footer {
+    width: 100%;
+    height: $footerHeight;
+    line-height: $footerHeight;
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .sideBar-container {
+    transition: width 0.28s;
+    width: $sideBarWidth;
+    height: 100%;
+    position: fixed;
+    top: $headerHeight;
+    bottom: $footerHeight;
+    left: 0;
+    overflow: hidden;
+
+    .sideBar-title {
+      height: $sideBarTitleHeight;
+      line-height: $sideBarTitleHeight;
+      //background-color: $green;
+      color: #000;
+      padding-left: 10px;
+      border: $greenBorder;
+      font-size: 14px;
+    }
+
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0px;
+    }
+
+    .el-scrollbar {
+      //height: calc(100vh - #{$headerHeight} - #{$footerHeight} - #{$sideBarTitleHeight});
+      height: calc(100vh - #{$headerHeight});
+      border-right: $greenBorder;
+      //border-bottom: $greenBorder;
+    }
+
+    .is-horizontal {
+      display: none;
+    }
+
+    .el-menu {
+      border: none;
+      height: 100%;
+      width: 100% !important;
+
+      .el-submenu .el-menu-item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .hideSidebar {
+    .sideBar-container {
+      width: 54px !important;
+    }
+
+    .main-container {
+      margin-left: 54px;
+    }
+  }
+}

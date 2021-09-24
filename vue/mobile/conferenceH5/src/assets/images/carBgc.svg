@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="142px" viewBox="0 0 375 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>形状</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.46288839%" y1="0%" x2="4.46288839%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2946BF" offset="0%"></stop>
+            <stop stop-color="#537CE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="101.686999%" id="linearGradient-2">
+            <stop stop-color="#EFF2FE" offset="0%"></stop>
+            <stop stop-color="#7B93E1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="101.686999%" id="linearGradient-3">
+            <stop stop-color="#EFF2FE" offset="0%"></stop>
+            <stop stop-color="#7B93E1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-住宿/票证安排" transform="translate(-115.000000, -2650.000000)">
+            <g id="编组-7备份-5" transform="translate(115.000000, 2586.000000)">
+                <g id="编组-7备份-3">
+                    <g id="编组-41">
+                        <g id="编组-8" transform="translate(0.000000, 64.000000)">
+                            <g id="形状">
+                                <g id="编组-8备份-2">
+                                    <g id="形状">
+                                        <polygon id="蒙版" fill="url(#linearGradient-1)" points="-5.46494792e-15 0 375 0 375 142 0 142"></polygon>
+                                        <polygon id="矩形" fill="url(#linearGradient-2)" opacity="0.100000001" transform="translate(321.199069, 83.147184) scale(1, -1) rotate(-360.000000) translate(-321.199069, -83.147184) " points="289.212642 24.0777778 351.408473 24.5275495 353.185497 142.216591 290.989665 141.766819"></polygon>
+                                        <polygon id="矩形" fill="url(#linearGradient-3)" opacity="0.100000001" transform="translate(299.668261, 104.261929) scale(1, -1) rotate(-360.000000) translate(-299.668261, -104.261929) " points="267.681833 67.0869289 329.877665 67.2621391 331.654689 141.436929 269.458857 141.261719"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

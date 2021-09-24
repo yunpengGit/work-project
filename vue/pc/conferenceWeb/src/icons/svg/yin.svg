@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>yin</title>
+    <g id="icon篇" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-54.000000, -119.000000)" fill-rule="nonzero">
+            <g id="阴备份" transform="translate(54.000000, 119.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+                <path d="M22,12 C22,8.15384615 18.8939394,5 15.1060606,5 C12.3787879,5 10.1060606,6.53846154 8.96969698,8.84615384 C8.43939395,8.61538462 7.83333333,8.53846153 7.15151515,8.53846153 C4.27272726,8.53846153 2,10.9230769 2,13.7692308 C2,16.5384615 4.12121211,18.8461538 6.84848484,19 L15.8636364,19 C19.2727273,18.6153846 22,15.6153846 22,12 Z" id="路径" fill="#D5E0F7" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

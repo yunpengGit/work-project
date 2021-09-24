@@ -1,0 +1,37 @@
+*{
+  /*三角箭头的颜色*/
+  // scrollbar-arrow-color: transparent;
+  /*滚动条滑块按钮的颜色*/
+  // scrollbar-face-color: #CCCCCC;
+  /*滚动条整体颜色*/
+  // scrollbar-highlight-color: rgba(0,0,0, 0.4);
+  /*滚动条3d亮色阴影边框的外观颜色——左边和上边的阴影色*/
+  // scrollbar-3dlight-color:#0099dd;
+  /*滚动条阴影*/
+  // scrollbar-shadow-color: #0099dd;
+  /*滚动条轨道颜色*/
+  // scrollbar-track-color: transparent;
+  /*滚动条3d暗色阴影边框的外观颜色——右边和下边的阴影色*/
+  // scrollbar-darkshadow-color: #0099dd;
+  /*滚动条基准颜色*/
+  // scrollbar-base-color: #CCCCCC;
+
+  // ::-webkit-scrollbar 滚动条整体部分，可以设置宽度等
+  // ::-webkit-scrollbar-button 滚动条两端的按钮
+  // ::-webkit-scrollbar-track  外层轨道
+  // ::-webkit-scrollbar-track-piece  内层滚动槽
+  // ::-webkit-scrollbar-thumb 滚动的滑块
+  // ::-webkit-scrollbar-corner 边角
+  // ::-webkit-resizer 定义右下角拖动块的样式
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: #CCCCCC;
+    border-radius: 10px;
+    &:hover{
+      background: rgba(0,0,0, 0.4);
+    }
+  }
+}

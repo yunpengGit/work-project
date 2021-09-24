@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>展开备份</title>
+    <g id="会务组" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会务工作台-含有陪同/统计" transform="translate(-343.000000, -563.000000)" fill="#A8B0B9">
+            <g id="编组-6" transform="translate(0.000000, 543.000000)">
+                <g id="展开" transform="translate(343.000000, 20.000000)">
+                    <path d="M5.242,4 L5.24264069,10.7573593 L12,10.757 L12,12 L4,12 L4,4 L5.242,4 Z" id="形状结合" transform="translate(8.000000, 8.000000) rotate(-135.000000) translate(-8.000000, -8.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

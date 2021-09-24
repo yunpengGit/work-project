@@ -1,0 +1,17 @@
+// 字体大小 处理
+// TODO 处理行高
+
+$fs14:14px;
+$fs16:16px;
+$fs18:18px;
+
+
+@mixin fs($val: 0){
+  font-size: $fs14 + $val;
+  [data-theme="16px"] & {
+    font-size: $fs16 + $val;
+  }
+  [data-theme="18px"] & {
+    font-size: $fs18 + $val;
+  }
+}

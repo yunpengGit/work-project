@@ -1,0 +1,148 @@
+.form-container{
+  position: relative;
+  padding: 0 0 90px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+  .form-container-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191f24;
+    line-height: 21px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -8px;
+      top: 50%;
+      margin-top: -7px;
+      height: 14px;
+      width: 4px;
+      background-color: #1e89ff;
+    }
+  }
+  .el-form ::v-deep {
+    .el-form-item {
+      margin-bottom: 36px;
+      &.is-error{
+        .vue-treeselect__control{
+          border-color: #EA340F;
+        }
+      }
+      .el-form-item__error{
+        top: calc(100% + 8px);
+      }
+    }
+    .el-input,
+    .vue-treeselect__control,
+    .el-textarea,
+    .select-org-tree .container {
+      width: 554px;
+    }
+    .file-mj {
+      width: 100%;
+      margin-right: 20px;
+      .el-input {
+        width: 100%;
+      }
+    }
+    .el-textarea textarea{
+      padding: 5px 8px;
+    }
+    .select-org-tree .container{
+      box-sizing: border-box;
+    }
+    .el-upload--picture-card,
+    .el-upload-list__item-actions{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+    }
+    .el-upload--picture-card .avatar{
+      width: 80px;
+      height: 80px;
+    }
+    .el-upload-list__item{
+      width: 80px;
+      height: 80px;
+    }
+    .el-date-editor .el-input__inner {
+      padding: 0 30px;
+    }
+    .tinymce-editor {
+      .tox-statusbar {
+        display: none;
+      }
+      .tox-tinymce {
+        width: 947px;
+        height: 400px !important;
+        border-radius: 4px;
+        border: 1px solid #dadbdc;
+      }
+    }
+    .custom-days {
+      margin-left: 20px;
+      margin-right: 10px;
+      width: 78px;
+      .el-input {
+        width: 78px;
+      }
+    }
+    .upload-files {
+      width: 800px;
+      border-radius: 4px;
+      border: 1px solid #dbdcdd;
+      .upload-header {
+        display: flex;
+        padding: 12px 16px;
+        border-bottom: 1px solid #dbdcdd;
+        .add-btn {
+          position: relative;
+        }
+        .delete-btn {
+          width: 88px;
+          height: 32px;
+          margin-left: 12px;
+          background: #ffffff;
+          border-radius: 4px;
+          border: 1px solid #dbdcdd;
+        }
+      }
+      .delete-file {
+        color: #e94a29;
+        font-size: 14px;
+        padding: 0;
+      }
+      .file-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .file-name {
+          .file-icon {
+            width: 18px;
+            height: 24px;
+            margin-right: 8px;
+          }
+          // max-width: 260px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          flex-shrink: 0;
+        }
+        .file-mj {
+          width: 132px;
+          .el-input {
+            width: 132px;
+          }
+        }
+      }
+    }
+  }
+}

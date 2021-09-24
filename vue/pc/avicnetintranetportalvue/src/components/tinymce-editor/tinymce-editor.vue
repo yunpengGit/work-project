@@ -1,0 +1,175 @@
+<template>
+  <div class="tinymce-editor">
+    <editor v-model="myValue" :init="init" :disabled="disabled" :placeholder="placeholder" @onClick="onClick" />
+  </div>
+</template>
+<script>
+import tinymce from 'tinymce/tinymce'
+import Editor from '@tinymce/tinymce-vue'
+import 'tinymce/themes/silver'
+// 编辑器插件plugins
+// 更多插件参考：https://www.tiny.cloud/docs/plugins/
+import 'tinymce/icons/default/icons.min.js'
+import 'tinymce/plugins/image' // 插入上传图片插件
+// import 'tinymce/plugins/media' // 插入视频插件
+import 'tinymce/plugins/table' // 插入表格插件
+import 'tinymce/plugins/lists' // 列表插件
+import 'tinymce/plugins/wordcount' // 字数统计插件
+import { getToken } from '@/utils/auth'
+export default {
+  components: {
+    Editor
+  },
+  props: {
+    value: {
+      type: String,
+      default: ''
+    },
+    // 基本路径，默认为空根目录，如果你的项目发布后的地址为目录形式，
+    // 即abc.com/tinymce，baseUrl需要配置成tinymce，不然发布后资源会找不到
+    baseUrl: {
+      type: String,
+      default: ''
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    placeholder: {
+      type: String,
+      default: ''
+    },
+    plugins: {
+      type: [String, Array],
+      default: 'lists image media table wordcount'
+    },
+    toolbar: {
+      type: [String, Array],
+      default:
+        'undo redo |  formatselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | lists image media table | removeformat'
+    },
+    secretLevel: {
+      type: Number,
+      default: 50
+    },
+    businessType: {
+      type: String,
+      default: ''
+    }
+  },
+  data () {
+    return {
+      init: {
+        language_url: `${this.baseUrl}/tinymce/langs/zh_CN.js`,
+        language: 'zh_CN',
+        skin_url: `${this.baseUrl}/tinymce/skins/ui/oxide`,
+        content_css: `${this.baseUrl}/tinymce/skins/content/default/content.css`,
+        height: 600,
+        code: true,
+        plugins: this.plugins,
+        toolbar: this.toolbar,
+        branding: false,
+        menu: {
+          file: {
+            title: 'File',
+            items: 'newdocument restoredraft | preview | print '
+          },
+          edit: {
+            title: 'Edit',
+            items: 'undo redo | cut copy paste | selectall | searchreplace'
+          },
+          view: {
+            title: 'View',
+            items:
+              'code | visualaid visualchars visualblocks | spellchecker | preview fullscreen'
+          },
+          insert: {
+            title: 'Insert',
+            items:
+              'image link media template codesample inserttable | charmap emoticons hr | pagebreak nonbreaking anchor toc | insertdatetime'
+          },
+          format: {
+            title: 'Format',
+            items:
+              'bold italic underline strikethrough superscript subscript codeformat | formats blockformats fontformats fontsizes align | forecolor backcolor | removeformat'
+          },
+          tools: {
+            title: 'Tools',
+            items: 'spellchecker spellcheckerlanguage | code wordcount'
+          },
+          table: {
+            title: 'Table',
+            items: 'inserttable tableprops deletetable row column cell'
+          },
+          help: { title: 'Help', items: 'help' }
+        },
+        // 此处为图片上传处理函数，这个直接用了base64的图片形式上传图片，
+        // 如需ajax上传可参考https://www.tiny.cloud/docs/configure/file-image-upload/#images_upload_handler
+        // automatic_uploads: true,
+        // images_reuse_filename: true,
+        // images_upload_credentials: true,
+        // images_upload_base_path: __ce.baseURL,
+        // images_upload_url: __ce.baseURL + "/security/uploadPic",
+
+        images_upload_handler: (blobInfo, success, failure) => {
+          // const img = "data:image/jpeg;base64," + blobInfo.base64();
+          // success(img);
+          var xhr, formData
+
+          xhr = new XMLHttpRequest()
+          xhr.withCredentials = true
+
+          xhr.open('POST', '/api/file/publicPic/upload')
+          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+          xhr.setRequestHeader('Authorization', `Bearer ${getToken()}`)
+          xhr.onload = function () {
+            var json
+            if (xhr.status !== 200) {
+              failure('HTTP Error: ' + xhr.status)
+              return
+            }
+
+            json = JSON.parse(xhr.responseText)
+            if (!json || typeof json.data !== 'string') {
+              failure('Invalid JSON: ' + xhr.responseText)
+              return
+            }
+            success(json.data)
+          }
+          formData = new FormData()
+          formData.append('file', blobInfo.blob())
+          formData.append('name', blobInfo.filename())
+          formData.append('secretLevel', this.secretLevel)
+          formData.append('businessType', this.businessType)
+          formData.append('storageType', 'oss')
+
+          xhr.send(formData)
+        }
+      },
+      myValue: this.value
+    }
+  },
+  watch: {
+    value (newValue) {
+      this.myValue = newValue
+    },
+    myValue (newValue) {
+      this.$emit('input', newValue)
+    }
+  },
+  mounted () {
+    tinymce.init({})
+  },
+  methods: {
+    // 添加相关的事件，可用的事件参照文档=> https://github.com/tinymce/tinymce-vue => All available events
+    // 需要什么事件可以自己增加
+    onClick (e) {
+      this.$emit('onClick', e, tinymce)
+    },
+    // 可以添加一些自己的自定义事件，如清空内容
+    clear () {
+      this.myValue = ''
+    }
+  }
+}
+</script>

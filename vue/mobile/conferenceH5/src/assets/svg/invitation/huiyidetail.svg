@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/其他/待办</title>
+    <defs>
+        <radialGradient cx="77.5620078%" cy="19.0395875%" fx="77.5620078%" fy="19.0395875%" r="124.184681%" gradientTransform="translate(0.775620,0.190396),scale(1.000000,0.818182),rotate(127.173434),translate(-0.775620,-0.190396)" id="radialGradient-1">
+            <stop stop-color="#68DEFF" offset="0%"></stop>
+            <stop stop-color="#1E89FF" offset="100%"></stop>
+        </radialGradient>
+        <path d="M18,20 C18,21.1045695 17.1045695,22 16,22 L2,22 C0.8954305,22 1.3527075e-16,21.1045695 0,20 L0,2 C-1.3527075e-16,0.8954305 0.8954305,1.08610472e-14 2,1.0658141e-14 L12,3.46389584e-14 L18,6 L18,20 Z" id="path-2"></path>
+        <filter x="-38.9%" y="-22.7%" width="177.8%" height="163.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.156862745   0 0 0 0 0.584313725   0 0 0 0 1  0 0 0 0.363818189 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="3" y="6.5" width="8" height="1.5" rx="0.75"></rect>
+        <filter x="-6.3%" y="-33.3%" width="112.5%" height="233.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.253105537 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="3" y="11" width="11" height="1.5" rx="0.75"></rect>
+        <filter x="-4.5%" y="-33.3%" width="109.1%" height="233.3%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.253105537 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="3" y="15.5" width="11" height="1.5" rx="0.75"></rect>
+        <filter x="-4.5%" y="-33.3%" width="109.1%" height="233.3%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.253105537 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="参会人报名成功备份-5" transform="translate(-38.000000, -266.000000)">
+            <g id="编组备份-3" transform="translate(12.000000, 256.000000)">
+                <g id="编组-6" transform="translate(0.000000, 0.000000)">
+                    <g id="Icon/其他/待办" transform="translate(26.000000, 10.000000)">
+                        <g id="编组-3" transform="translate(0.000000, 0.000000)">
+                            <g id="编组-2" transform="translate(9.000000, 7.000000)">
+                                <g id="形状结合">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                </g>
+                                <path d="M12,5.68434189e-15 L18,6 L13.5,6 C12.6715729,6 12,5.32842712 12,4.5 L12,5.68434189e-15 L12,5.68434189e-15 Z" id="矩形备份-3" fill="#7FF4FF"></path>
+                                <g id="矩形">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                </g>
+                                <g id="矩形备份">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                </g>
+                                <g id="矩形备份-2">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,54 @@
+@import "mixins/mixins";
+
+@mixin def($scale: 1,$fsBase: 14px){
+  .el-step.is-horizontal .el-step__line{
+    top: 11px * $scale;
+  }
+  .el-step__icon{
+    width: 24px * $scale;
+    height: 24px * $scale;
+    font-size: $fsBase;
+    &.is-icon{
+      width: 40px * $scale;
+    }
+  }
+  .el-step__icon-inner[class*=el-icon]:not(.is-status){
+    font-size: 25px * $scale;
+  }
+  .el-step__title{
+    font-size: 16px * $scale;
+    line-height: 38px * $scale;
+  }
+  .el-step__description{
+    font-size: 12px * $scale;
+    line-height: 20px * $scale;
+  }
+}
+
+@include b(steps) {
+  display: flex;
+
+  @include m(simple) {
+    padding: 13px 8%;
+    border-radius: 4px;
+    background: $--background-color-base;
+  }
+
+  @include m(horizontal) {
+    white-space: nowrap;
+  }
+
+  @include m(vertical) {
+    height: 100%;
+    flex-flow: column;
+  }
+  @include m(mini) {
+    @include def();
+  }
+  @include m(small) {
+    @include def(sizeScale($--font-size-base,$--font-size-small), $--font-size-small);
+  }
+  @include m(medium) {
+    @include def(sizeScale($--font-size-base,$--font-size-medium), $--font-size-medium);
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>思政之窗</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css" />
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="layui/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+  </head>
+  <body>
+    <div class="page flex-col">
+      <div class="group1 flex-col">
+        <div class="group2 flex-col">
+          <div class="box2 flex-col">
+            <div class="mod1 flex-row">
+              <div class="section1 flex-col"></div>
+              <div class="section2 flex-col">
+                <span class="txt1">优秀政研成果</span>
+              </div>
+            </div>
+          </div>
+          <div class="box3 flex-col">
+            <div class="center-box">
+              <div class="icon"></div>
+              <input type="text"  lay-filter="input" name="" placeholder="输入关键字搜索" autocomplete="off" class="layui-input">
+              <div class="outer12 flex-col all-search">
+                <div class="outer13">
+                  <img class="label1" src="./img/searchbar-icon.png" />
+                  <span class="info1">全文检索</span>
+                </div>
+              </div>
+            </div>
+          </div>
+              <button lay-submit style="display: none;" class="submit-btn">提交</button>
+            </form>
+          </div>
+          <div id="demo1"></div>
+          <div class="box5 flex-col">
+            <div class="section-list-box flex-col">
+              <!-- <div class="section-list-item">
+                <div class="section-list-title">
+                  <span class="section-list-icon"></span>
+                  <span class="section-title-text">国防军工企业以文化提升价值创造能力路径的研究</span>
+                </div>
+                <div class="section-list-option">
+                  <span class="section-list-label">所属单位：</span>
+                  <span class="section-value-company">中航工业成飞</span>
+                  <span class="section-list-label">获奖年份：</span>
+                  <span class="section-value-year">2012-2013</span>
+                  <span class="section-list-label">获奖等级：</span>
+                  <span class="section-value-year">一等奖</span>
+                  <span class="section-down">
+                    <img class="section-down-icon" src="./img/down-icon.png" />
+                    <span class="section-down-txt">下载文档</span>
+                  </span>
+                </div>
+              </div>
+              <div class="section-list-item">
+                <div class="section-list-title">
+                  <span class="section-list-icon"></span>
+                  <span class="section-title-text">国防军工企业以文化提升价值创造能力路径的研究</span>
+                </div>
+                <div class="section-list-option">
+                  <span class="section-list-label">所属单位：</span>
+                  <span class="section-value-company">中航工业成飞</span>
+                  <span class="section-list-label">获奖年份：</span>
+                  <span class="section-value-year">2012-2013</span>
+                  <span class="section-list-label">获奖等级：</span>
+                  <span class="section-value-year">一等奖</span>
+                  <span class="section-down">
+                    <img class="section-down-icon" src="./img/down-icon.png" />
+                    <span class="section-down-txt">下载文档</span>
+                  </span>
+                </div>
+              </div>
+              <div class="section-list-item">
+                <div class="section-list-title">
+                  <span class="section-list-icon"></span>
+                  <span class="section-title-text">国防军工企业以文化提升价值创造能力路径的研究</span>
+                </div>
+                <div class="section-list-option">
+                  <span class="section-list-label">所属单位：</span>
+                  <span class="section-value-company">中航工业成飞</span>
+                  <span class="section-list-label">获奖年份：</span>
+                  <span class="section-value-year">2012-2013</span>
+                  <span class="section-list-label">获奖等级：</span>
+                  <span class="section-value-year">一等奖</span>
+                  <span class="section-down">
+                    <img class="section-down-icon" src="./img/down-icon.png" />
+                    <span class="section-down-txt">下载文档</span>
+                  </span>
+                </div>
+              </div>
+              <div class="section-list-item">
+                <div class="section-list-title">
+                  <span class="section-list-icon"></span>
+                  <span class="section-title-text">国防军工企业以文化提升价值创造能力路径的研究</span>
+                </div>
+                <div class="section-list-option">
+                  <span class="section-list-label">所属单位：</span>
+                  <span class="section-value-company">中航工业成飞</span>
+                  <span class="section-list-label">获奖年份：</span>
+                  <span class="section-value-year">2012-2013</span>
+                  <span class="section-list-label">获奖等级：</span>
+                  <span class="section-value-year">一等奖</span>
+                  <span class="section-down">
+                    <img class="section-down-icon" src="./img/down-icon.png" />
+                    <span class="section-down-txt">下载文档</span>
+                  </span>
+                </div>
+              </div> -->
+            </div>
+            <div class="empty">
+              <img src="./img/tipIcon.png" alt="">
+              <div>暂无数据</div>
+            </div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="layui/layui.js"></script>
+  <script src="layui/xm-select.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/index.js"></script>
+</html>

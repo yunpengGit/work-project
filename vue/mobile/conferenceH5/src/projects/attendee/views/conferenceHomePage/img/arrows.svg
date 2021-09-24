@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.7%" y="-11.0%" width="109.4%" height="121.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0856916521 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-会议首页" transform="translate(-247.000000, -798.000000)">
+            <g id="编组-28" transform="translate(100.000000, 744.000000)">
+                <g id="编组-13">
+                    <g id="编组-5" filter="url(#filter-1)" transform="translate(0.000000, 35.000000)">
+                        <g id="箭头" transform="translate(147.000000, 19.000000)">
+                            <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="12" height="12"></rect>
+                            <path d="M4.76585837,9.7660187 L8.61820974,6.76010785 C9.07167067,6.40628157 9.12943387,5.77914176 8.74722745,5.35935186 C8.70795976,5.31622287 8.66479808,5.2762661 8.61820974,5.23991417 L4.76585837,2.23400332 C4.31239743,1.88017704 3.63495519,1.93365112 3.25274877,2.35344101 C3.08952227,2.53271804 3,2.75963612 3,2.99410016 L3,9.00592186 C3,9.55493606 3.4807622,10 4.07381242,10 C4.32708265,10 4.57220166,9.91712506 4.76585837,9.7660187 Z" id="矩形" fill="#08104A" opacity="0.5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

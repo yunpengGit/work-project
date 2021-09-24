@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>下拉选择</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-住宿/票证安排" transform="translate(-1252.000000, -2724.000000)" fill="#FFFFFF">
+            <g id="编组-7备份-2" transform="translate(911.000000, 2586.000000)">
+                <g id="编组-9" transform="translate(20.000000, 138.000000)">
+                    <g id="Icon/Other/展开-2" transform="translate(283.000000, 0.000000)">
+                        <g id="编组-9">
+                            <g id="下拉选择" transform="translate(38.000000, 0.000000)">
+                                <rect id="矩形" fill-opacity="0.01" x="0" y="0" width="16" height="16"></rect>
+                                <path d="M12.1059103,6.64447564 L8.43527866,10.9994209 C8.07934459,11.4217116 7.44846882,11.4755042 7.02617818,11.1195701 C6.98279225,11.0830017 6.94259746,11.0428069 6.90602898,10.9994209 L3.23539731,6.64447564 C2.87946324,6.222185 2.93325587,5.59130923 3.35554651,5.23537516 C3.53589152,5.08336863 3.76416137,5 4.00002215,5 L11.3412855,5 C11.8935702,5 12.3412855,5.44771525 12.3412855,6 C12.3412855,6.23586078 12.2579169,6.46413063 12.1059103,6.64447564 Z" id="矩形"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

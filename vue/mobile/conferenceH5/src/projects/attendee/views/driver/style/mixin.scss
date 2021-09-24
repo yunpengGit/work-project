@@ -1,0 +1,125 @@
+@mixin border1px($position: 'bottom', $color: #eeeeef) {
+  &::after {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    @if $position == 'bottom' {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transform: scaleY(0.5);
+    } @else if $position == 'top' {
+      top: 0;
+      right: 0;
+      left: 0;
+      transform: scaleY(0.5);
+    } @else if $position == 'right' {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: scaleX(0.5);
+    } @else if $position == 'left' {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0.5);
+    }
+    border-#{$position}: 1px solid $color;
+  }
+}
+@mixin task {
+  & > {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .date {
+        display: flex;
+        align-items: center;
+        & > .dot {
+          width: 8px;
+          height: 8px;
+          background-color: #b5b7b9;
+          border-radius: 50%;
+          &.active {
+            background-color: #1e89ff;
+          }
+        }
+        & > .text {
+          font-size: 14px;
+          color: #191f24;
+        }
+      }
+      .status {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 10px;
+          height: 10px;
+        }
+        .text {
+          margin-left: 4px;
+          font-size: 14px;
+          color: #ff8200;
+          &.sent {
+            color: #00a28c;
+          }
+        }
+      }
+    }
+    .sent-to {
+      margin-top: 16px;
+    }
+    .address {
+      margin-top: 8px;
+    }
+    .sent-to,
+    .address {
+      display: flex;
+      align-items: center;
+      & > {
+        .label {
+          width: 70px;
+          font-size: 14px;
+          color: rgba(25, 31, 36, 0.64);
+        }
+        .text {
+          margin-left: 12px;
+          flex: 1;
+          height: 21px;
+          font-size: 16px;
+          font-weight: 500;
+          color: #191f24;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+.select-calendar {
+  display: flex;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  background: #ffffff;
+  position: relative;
+  justify-content: space-between;
+  @include border1px('top');
+  & > span {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-left: 4px;
+      width: 16px;
+      height: 16px;
+    }
+    &:nth-child(2) {
+      .icon {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}

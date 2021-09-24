@@ -1,0 +1,45 @@
+$green:#00274C;
+$write: #fff;
+$pageSplitLineColor: #00274C;
+$bottomLineColor: #ccc;
+
+$textColorFFF: #fff;
+$textColorF00: #f00;
+
+$fontSize12: 12px;
+$fontSize14: 14px;
+$fontSize16: 16px;
+$fontSize18: 18px;
+
+$pageSpace: 0px;
+$padding20: 20px;
+
+$sideBarWidth: 200px;
+$headerHeight: 50px;
+$sideBarBgColor: #fff;
+$footerHeight: 0px;
+$tagBarHeight: 34px;
+
+// -----isc
+// $sideBarWidth: 210px;
+// $headerHeight: 0px;
+// $sideBarBgColor: #fff;
+// $footerHeight: 0px;
+// $tagBarHeight: 0px;
+
+$firstColor: #78D0DD;
+$secondColor: #D5AB6F;
+$thirdColor: #FCFF00;
+$fourthColor: #FF8000;
+$fifthColor: #FF0000;
+
+:export {
+    tagBarHeightForTable: 34;
+    headerHeightForTable: 50;
+    footerHeight: 25;
+    firstColor: $firstColor;
+    secondColor: $secondColor;
+    thirdColor: $thirdColor;
+    fourthColor: $fourthColor;
+    fifthColor: $fifthColor;
+}

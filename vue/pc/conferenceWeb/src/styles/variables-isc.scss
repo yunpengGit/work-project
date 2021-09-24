@@ -1,0 +1,37 @@
+$green: #128c77;
+$pageSplitLineColor: #128c77;
+$bottomLineColor: #ccc;
+
+$textColorFFF: #fff;
+$textColorF00: #f00;
+
+$fontSize12: 12px;
+$fontSize14: 14px;
+$fontSize16: 16px;
+$fontSize18: 18px;
+
+$pageSpace: 0px;
+$padding20: 20px;
+
+$sideBarWidth: 0;
+$headerHeight: 0px;
+$sideBarBgColor: #fff;
+$footerHeight: 0px;
+$tagBarHeight: 0px;
+
+$firstColor: #78D0DD;
+$secondColor: #D5AB6F;
+$thirdColor: #FCFF00;
+$fourthColor: #FF8000;
+$fifthColor: #FF0000;
+
+:export {
+    tagBarHeightForTable: 0;
+    headerHeightForTable: 0;
+    footerHeight: 0;
+    firstColor: $firstColor;
+    secondColor: $secondColor;
+    thirdColor: $thirdColor;
+    fourthColor: $fourthColor;
+    fifthColor: $fifthColor;
+}

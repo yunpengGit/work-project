@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>银牌</title>
+    <defs>
+        <circle id="path-1" cx="9" cy="9" r="9"></circle>
+        <filter x="-22.2%" y="-22.2%" width="144.4%" height="144.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-8" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.62146834   0 0 0 0 0.707843915   0 0 0 0 0.753304744  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="9 11.5 6.06107374 13.045085 6.62235871 9.77254249 4.24471742 7.45491503 7.53053687 6.97745751 9 4 10.4694631 6.97745751 13.7552826 7.45491503 11.3776413 9.77254249 11.9389263 13.045085"></polygon>
+        <filter x="-2.6%" y="-5.0%" width="115.1%" height="110.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.260727676 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="移动原型" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="思政之窗" transform="translate(-332.000000, -640.000000)">
+            <g id="Group-3备份-14" transform="translate(0.000000, 564.000000)">
+                <g id="编组-2" transform="translate(332.000000, 76.000000)">
+                    <g id="椭圆形">
+                        <use fill="#DDEAF0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <circle stroke="#ABC7D5" stroke-width="2" stroke-linejoin="square" cx="9" cy="9" r="8"></circle>
+                    </g>
+                    <g id="星形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <polygon id="星形备份" fill="#F3F9FC" points="9 11.5 6.06107374 13.045085 6.62235871 9.77254249 4.24471742 7.45491503 7.53053687 6.97745751 11.9389263 13.045085"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

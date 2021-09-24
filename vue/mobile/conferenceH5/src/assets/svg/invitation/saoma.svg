@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/System/扫码</title>
+    <defs>
+        <path d="M28,21 L28,25 C28,26.6568542 26.6568543,28 25,28 L21,28 L21,26 L25,26 C25.5128359,26 25.9355072,25.6139598 25.9932723,25.1166211 L26,25 L26,21 L28,21 Z M10,21 L10,25 C10,25.5128358 10.3860402,25.9355072 10.8833789,25.9932723 L11,26 L15,26 L15,28 L11,28 C9.34314576,28 8.00000001,26.6568542 8.00000001,25 L8.00000001,21 L10,21 Z M26,17 L26,19 L10,19 L10,17 L26,17 Z M25,8 C26.6568543,8 28,9.34314575 28,11 L28,15 L26,15 L26,11 C26,10.4871642 25.6139598,10.0644928 25.1166211,10.0067277 L25,10 L21,10 L21,8 L25,8 Z M15,8 L15,10 L11,10 C10.4871642,10 10.0644929,10.3860402 10.0067277,10.8833789 L10,11 L10,15 L8.00000001,15 L8.00000001,11 C8.00000001,9.34314575 9.34314576,8 11,8 L15,8 Z" id="path-1"></path>
+        <filter x="-35.0%" y="-25.0%" width="170.0%" height="170.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.537254902   0 0 0 0 1  0 0 0 0.35953463 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="参会人报名成功备份-5" transform="translate(-301.000000, -266.000000)">
+            <g id="编组备份-3" transform="translate(12.000000, 256.000000)">
+                <g id="编组-10备份" transform="translate(263.000000, 0.000000)">
+                    <g id="Icon/System/扫码" transform="translate(26.000000, 10.000000)">
+                        <g id="形状">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#1E89FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <rect id="矩形" fill-opacity="0.243852949" fill="#1E89FF" x="10" y="10" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

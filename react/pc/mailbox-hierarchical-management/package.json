@@ -1,0 +1,65 @@
+{
+  "name": "mailbox-hierarchical-management",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/g2plot": "^2.0.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.7.3",
+    "axios": "^0.21.0",
+    "dayjs": "^1.9.6",
+    "dotenv-cli": "^4.0.0",
+    "file-saver": "^2.0.5",
+    "http-proxy-middleware": "^1.0.6",
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.29.1",
+    "qs": "^6.9.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "dotenv -e .env.development react-app-rewired start",
+    "build": "dotenv -e .env.test react-app-rewired build",
+    "build:pro": "dotenv -e .env.production react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.1",
+    "babel-preset-env": "^1.7.0",
+    "customize-cra": "^1.0.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "react-app-rewired": "^2.1.6",
+    "serve": "^11.3.2",
+    "styled-components": "^5.2.1"
+  }
+}

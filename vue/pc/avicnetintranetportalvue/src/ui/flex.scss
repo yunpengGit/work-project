@@ -1,0 +1,34 @@
+// flex兼容ie10，满足系统要求，大胆用
+
+// 行内布局
+@mixin flex-inline($align:center,$justify:flex-start){
+    display:inline-flex;
+    align-items:$align;
+    justify-content:$justify;
+    flex-wrap:nowrap 
+}
+
+// 单行布局
+@mixin flex-single($align:center,$justify:flex-start){
+    display:flex;
+    align-items:$align;
+    justify-content:$justify;
+    flex-wrap:nowrap 
+}
+
+// 多行布局
+@mixin flex-multi ($align:center,$justify:flex-start){
+    display:flex;
+    align-content:$align;
+    justify-content:$justify;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+// 子元素操作
+@mixin flex-child ($shrink:0,$grow:0,$order:0,$align:auto){
+    flex-shrink:$shrink;
+    flex-grow:$grow;
+    order: $order;
+    align-self: $align;
+}

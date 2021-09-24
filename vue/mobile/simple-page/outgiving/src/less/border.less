@@ -1,0 +1,23 @@
+.border-1px(@color, @direction){
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    border-@{direction}: 1px solid @color;
+    // border-right: 1px solid @color;
+    color: @color;
+    height: 200%;
+    transform-origin: left top;
+    transform: scale(0.5);
+    pointer-events: none; /* 防止点击触发 */
+    box-sizing: border-box;
+    @media screen and (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3){
+      width: 300%;
+      height: 300%;
+      transform: scale(0.33);
+    }
+  }
+}

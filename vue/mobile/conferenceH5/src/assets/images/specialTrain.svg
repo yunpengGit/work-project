@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="28px" viewBox="0 0 67 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>编组 11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-住宿/票证安排" transform="translate(-801.000000, -2671.000000)">
+            <g id="编组-7备份" transform="translate(513.000000, 2586.000000)">
+                <g id="编组-41">
+                    <g id="编组-11" transform="translate(288.000000, 85.000000)">
+                        <circle id="椭圆形" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                        <path d="M15,0 L53,0 C60.7319865,-1.42034288e-15 67,6.2680135 67,14 C67,21.7319865 60.7319865,28 53,28 L15,28 L15,28 L15,0 Z" id="矩形" fill="#FFFFFF"></path>
+                        <text id="专车" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#2063F8">
+                            <tspan x="30" y="19">专车</tspan>
+                        </text>
+                        <g id="编组-3" transform="translate(10.000000, 7.000000)">
+                            <rect id="矩形" fill="#2063F8" x="0" y="3" width="14" height="8" rx="2"></rect>
+                            <circle id="椭圆形" fill="#FFFFFF" cx="3" cy="8" r="1"></circle>
+                            <circle id="椭圆形备份-2" fill="#FFFFFF" cx="11" cy="8" r="1"></circle>
+                            <rect id="矩形备份-10" fill="#2063F8" x="2" y="9" width="2" height="4" rx="1"></rect>
+                            <rect id="矩形备份-11" fill="#2063F8" x="10" y="9" width="2" height="4" rx="1"></rect>
+                            <rect id="矩形备份-12" fill="#2063F8" x="2" y="0" width="10" height="4" rx="1"></rect>
+                            <path d="M4,1 L10,1 C10.5522847,1 11,1.44771525 11,2 L11,4 L11,4 L3,4 L3,2 C3,1.44771525 3.44771525,1 4,1 Z" id="矩形备份-12" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

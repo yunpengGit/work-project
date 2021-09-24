@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="137px" viewBox="0 0 375 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>首页背景图</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.46288839%" y1="0%" x2="4.46288839%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2946BF" offset="0%"></stop>
+            <stop stop-color="#537CE1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="202108版-住宿/票证安排" transform="translate(-1304.000000, -2758.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-7备份-4" transform="translate(1304.000000, 2586.000000)">
+                <g id="编组-41">
+                    <g id="首页背景图" transform="translate(0.000000, 172.000000)">
+                        <polygon id="蒙版" points="-5.46494792e-15 0 375 0 375 137 0 137"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

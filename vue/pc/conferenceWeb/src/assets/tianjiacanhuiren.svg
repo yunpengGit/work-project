@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path fill="#03BE1C" d="M42.041,0H11.958c-3.313,0-6,2.687-6,6v52c0,3.313,2.687,6,6,6h40.084c3.313,0,6-2.687,6-6V16.001L42.041,0z
+	"/>
+<polygon fill="#44DA58" points="58.042,16.001 42.041,16.001 42.041,0 "/>
+<g>
+	<g>
+		<path fill="#8DE198" d="M32,18.131c-9.718,0-17.625,7.906-17.625,17.625S22.282,53.381,32,53.381
+			c9.719,0,17.625-7.906,17.625-17.625S41.719,18.131,32,18.131z M32,49.381c-7.513,0-13.625-6.112-13.625-13.625
+			S24.487,22.131,32,22.131s13.625,6.112,13.625,13.625S39.513,49.381,32,49.381z"/>
+		<polygon fill="#8DE198" points="34,28.915 30,28.915 30,37.756 39.583,37.756 39.583,33.756 34,33.756 		"/>
+	</g>
+</g>
+</svg>

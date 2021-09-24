@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="参会人" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="第一步" transform="translate(-28.000000, -354.000000)">
+            <g id="编组-3" transform="translate(0.000000, 344.000000)">
+                <g id="编组-4" transform="translate(28.000000, 8.000000)">
+                    <g id="编组" transform="translate(0.000000, 2.000000)">
+                        <g id="编组-2">
+                            <circle id="椭圆形" stroke="#1E89FF" cx="7.5" cy="7.5" r="7"></circle>
+                            <path d="M7.8,10 C8.2418278,10 8.6,10.3581722 8.6,10.8 C8.6,11.2418278 8.2418278,11.6 7.8,11.6 C7.3581722,11.6 7,11.2418278 7,10.8 C7,10.3581722 7.3581722,10 7.8,10 Z M7.8,4 C8.16818983,4 8.46666667,4.29847683 8.46666667,4.66666667 L8.46666667,8.66666667 C8.46666667,9.0348565 8.16818983,9.33333333 7.8,9.33333333 C7.43181017,9.33333333 7.13333333,9.0348565 7.13333333,8.66666667 L7.13333333,4.66666667 C7.13333333,4.29847683 7.43181017,4 7.8,4 Z" id="形状结合" fill="#1E89FF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

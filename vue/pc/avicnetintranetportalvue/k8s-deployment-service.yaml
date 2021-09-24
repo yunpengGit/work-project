@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: avicnet-portal-ui-service
+  namespace: kube-ops
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    name: avicnet-portal-ui

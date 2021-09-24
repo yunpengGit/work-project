@@ -1,0 +1,168 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "common/transition";
+@import "checkbox";
+
+@mixin def($scale: 1, $fsBase: $--font-size-base) {
+  .el-tree-node__label, .el-tree-node__content .custom-tree-node, .el-tree-node__expand-icon, .el-checkbox {
+    font-size: $fsBase;
+  }
+  .el-checkbox__inner {
+    width: $fsBase;
+    height: $fsBase;
+    &::after {
+      left:  $scale * 4px;
+      width: $scale * 3px;
+      height: $scale * 7px;
+    }
+  }
+  .el-checkbox__input.is-indeterminate {
+    .el-checkbox__inner {
+      &::before {
+        top: ($fsBase - 2px - 2px) / 2;
+      }
+    }
+  }
+  .el-tree-node__content {
+    height: 26px * $scale;
+  }
+  .el-tree__empty-block {
+    min-height: 60px * $scale;
+    .el-tree__empty-text {
+      font-size: $fsBase;
+    }
+  }
+}
+
+@include b(tree) {
+  position: relative;
+  cursor: default;
+  background: $--color-white;
+  color: $--tree-font-color;
+
+  @include e(empty-block) {
+    position: relative;
+    min-height: 60px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include e(empty-text) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $--color-text-secondary;
+    font-size: $--font-size-base;
+  }
+
+  @include e(drop-indicator) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $--color-primary;
+  }
+
+  .el-tree-node__content_stripe {
+    background-color: $--tree-node-stripe-background-color;
+  }
+
+  @include m(medium) {
+    @include def($--medium--scale, $--font-size-medium);
+  }
+  @include m(small) {
+    @include def($--small--scale, $--font-size-small);
+  }
+  @include m(mini) {
+    @include def();
+  }
+}
+
+@include b(tree-node) {
+  white-space: nowrap;
+  outline: none;
+  &:focus { /* focus */
+    > .el-tree-node__content {
+      background-color: $--tree-node-hover-background-color;
+    }
+  }
+
+  @include when(drop-inner) {
+    > .el-tree-node__content .el-tree-node__label {
+      background-color: $--color-primary;
+      color: #fff;
+    }
+  }
+
+  @include e(content) {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    cursor: pointer;
+
+    & > .el-tree-node__expand-icon {
+      padding: 6px;
+    }
+    & > label.el-checkbox {
+      margin-right: 8px;
+    }
+    &:hover {
+      background-color: $--tree-node-hover-background-color;
+    }
+
+    .el-tree.is-dragging & {
+      cursor: move;
+
+      & * {
+        pointer-events: none;
+      }
+    }
+
+    .el-tree.is-dragging.is-drop-not-allow & {
+      cursor: not-allowed;
+    }
+  }
+
+  @include e(expand-icon) {
+    cursor: pointer;
+    color: $--tree-expand-icon-color;
+    font-size: 12px;
+
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+
+    &.expanded {
+      transform: rotate(90deg);
+    }
+
+    &.is-leaf {
+      color: transparent;
+      cursor: default;
+    }
+  }
+
+  @include e(label) {
+    font-size: $--font-size-base;
+  }
+
+  @include e(loading-icon) {
+    margin-right: 8px;
+    font-size: $--font-size-base;
+    color: $--tree-expand-icon-color;
+  }
+
+  & > .el-tree-node__children {
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  &.is-expanded > .el-tree-node__children {
+    display: block;
+  }
+}
+
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  background-color: mix($--color-white, $--color-primary, 92%);
+}

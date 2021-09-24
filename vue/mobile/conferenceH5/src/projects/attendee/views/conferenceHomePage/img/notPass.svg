@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D2DDF9" offset="0%"></stop>
+            <stop stop-color="#7A9DF0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.2016477%" y1="45.9688607%" x2="11.6243068%" y2="53.125%" id="linearGradient-2">
+            <stop stop-color="#F7F0E4" offset="0%"></stop>
+            <stop stop-color="#F5DFA1" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.5,16 C15.3284271,16 16,16.6715729 16,17.5 C16,18.2796961 15.4051119,18.9204487 14.64446,18.9931334 L14.5,19 L9.5,19 C8.67157288,19 8,18.3284271 8,17.5 C8,16.7203039 8.59488808,16.0795513 9.35553999,16.0068666 L9.5,16 L14.5,16 Z M18.5,16 C19.3284271,16 20,16.6715729 20,17.5 C20,18.2796961 19.4051119,18.9204487 18.64446,18.9931334 L18.5,19 C17.6715729,19 17,18.3284271 17,17.5 C17,16.7203039 17.5948881,16.0795513 18.35554,16.0068666 L18.5,16 Z" id="path-3"></path>
+        <filter x="-50.0%" y="-200.0%" width="200.0%" height="500.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.423529412   0 0 0 0 0.517647059   0 0 0 0 0.792156863  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-会议首页" transform="translate(-1392.000000, -1256.000000)">
+            <g id="报名/不通过" transform="translate(1392.000000, 1256.000000)">
+                <g>
+                    <rect id="蒙版" fill="#FDFDFE" opacity="0.01" transform="translate(18.000000, 18.000000) scale(1, -1) rotate(-90.000000) translate(-18.000000, -18.000000) " x="0" y="2.27373675e-13" width="36" height="36"></rect>
+                    <circle id="椭圆形" fill="#DEECFE" transform="translate(19.000000, 18.000000) scale(1, -1) rotate(-90.000000) translate(-19.000000, -18.000000) " cx="19" cy="18" r="13"></circle>
+                    <path d="M4.87350524,14.6497349 L22.9736454,3.44488619 C23.4432339,3.15418856 24.0595675,3.29920825 24.3502651,3.76879672 C24.4481466,3.92691293 24.5,4.10919027 24.5,4.29515134 L24.5,26.7048487 C24.5,27.2571334 24.0522847,27.7048487 23.5,27.7048487 C23.3140389,27.7048487 23.1317616,27.6529953 22.9736454,27.5551138 L4.87350524,16.3502651 C4.40391676,16.0595675 4.25889708,15.4432339 4.5495947,14.9736454 C4.63104794,14.8420671 4.74192693,14.7311881 4.87350524,14.6497349 Z" id="矩形" fill="url(#linearGradient-1)" transform="translate(14.000000, 15.500000) scale(1, -1) rotate(-90.000000) translate(-14.000000, -15.500000) "></path>
+                    <g id="形状结合" fill-rule="nonzero" transform="translate(14.000000, 17.500000) scale(1, -1) rotate(-90.000000) translate(-14.000000, -17.500000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

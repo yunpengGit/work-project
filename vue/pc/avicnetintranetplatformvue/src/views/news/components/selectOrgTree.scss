@@ -1,0 +1,54 @@
+.select-org-tree {
+  .container {
+    position: relative;
+    display: flex;
+    width: 944px;
+    height: 84px;
+    padding: 10px 38px 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #dadbdc;
+
+    .item {
+      display: flex;
+      align-items: center;
+      height: 26px;
+      padding: 4px 8px;
+      margin-right: 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #191f24;
+      background-color: #f6f6f6;
+
+      .delete {
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .switch {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      background-color: #f6f6f6;
+      cursor: pointer;
+
+      .reader-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .tips {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #b7b9bb;
+  }
+}

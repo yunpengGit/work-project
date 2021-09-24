@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta content="telephone=no" name="format-detection" />
+<title>分发</title>
+<script src="./js/flexible.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/rem.js"></script>
+</head>
+<body>
+	
+	<span class='test'><img src="./images/icon.png" alt="" class="icon">请选择审批/办理意见</span>
+	<div class='approval-handling-opinions'>
+		<ul class="checked-list">
+			<!-- <li class='item'>
+				<span>拟稿人</span>
+				<span>张三</span>
+				<span class="icon">
+					<img src="./images/delete.png" alt="">
+				</span>
+			</li>
+			<li class='item'>
+				<span>拟稿人起草</span>
+				<span>张三</span>
+				<span class="icon">
+					<img src="./images/delete.png" alt="">
+				</span>
+			</li> -->
+		</ul>
+		<div class="list-box hide">
+			<ul class="list">
+				<!-- <li class="item">
+					<div class="icon">
+						<span></span>
+					</div>
+					<div class="info">
+						<div class="top">
+							<span class='box'><span class="name">张三</span><span class="title">拟稿人起草</span></span><span class="date">12月11日 11:44</span>
+						</div>
+						<div class="content">
+							<div class="label">办理意见：</div>
+							<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="icon">
+						<span></span>
+					</div>
+					<div class="info">
+						<div class="top">
+							<span class='box'><span class="name">张三</span><span class="title">拟稿人起草</span></span><span class="date">12月11日 11:44</span>
+						</div>
+						<div class="content">
+							<div class="label">办理意见：</div>
+							<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+						</div>
+					</div>
+				</li> -->
+			</ul>
+			<div class="bottom-box">
+				<div class="count">
+					<span>已选择：</span><span class='num'>0</span><span>项</span>
+				</div>
+				<span class="btn-box">
+					<button type="button" class='btn cancel' onclick="cleanFn">取消</button>
+					<button type="button" class='btn confirm' onclick="confirmFn">确定</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<script>
+		window.onload = function () {
+			
+			const $test = document.querySelector('.test')
+			$test.onclick =checkFn
+			const data = [
+				{"fdAuditNote":"请领导批示","fdId":"0ecc9c9c665d4fcbaf22e1a0b10e672a","fdCreateTime":"2020-05-01 10:10","fdName":"张三","fdFactNodeName":"拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿拟稿"},
+				{"fdAuditNote":"请认真办理","fdId":"0ecc9c9c665d4fcbaf22e1a0b10e672b","fdCreateTime":"2020-05-01 11:10","fdName":"李四","fdFactNodeName":"领导审批"},
+				{"fdAuditNote":"已经办完成","fdId":"0ecc9c9c665d4fcbaf22e1a0b10e672c","fdCreateTime":"2020-05-01 12:13","fdName":"王五","fdFactNodeName":"办理人办理"}
+			]
+			
+			const $checkedList = document.querySelector('.checked-list')
+			const $listBox = document.querySelector('.list-box')
+			const $list = document.querySelector('.list')
+			const $cancel = document.querySelector('.cancel')
+			const $confirm = document.querySelector('.confirm')
+			let checkData = []
+			$cancel.onclick =cleanFn
+			$confirm.onclick =confirmFn
+
+			init()
+			function init() {
+				//初始化数据
+				initList()
+			}
+			function checkFn() {
+				// cleanFn ()
+				if (checkData.length>0){
+					echoCheckData()
+				}
+				showList()
+			}
+			function showList () {
+				$listBox.classList.remove("hide")
+			}
+			function hideList () {
+				$listBox.classList.add("hide")
+			}
+			function initList() {
+				let str = ''
+				data.forEach((item) => {
+				str += ["	<li class=\"item\" id=\""+item.fdId+"\">",
+"				<div class=\"icon\">",
+"					<span></span>",
+"				</div>",
+"				<div class=\"info\">",
+"					<div class=\"top\">",
+"						<span class=\'box\'><span class=\"name\">"+item.fdName+"</span><span class=\"title\">"+item.fdFactNodeName+"</span></span><span class=\"date\">"+item.fdCreateTime+"</span>",
+"					</div>",
+"					<div class=\"content\">",
+"						<div class=\"label\">办理意见：</div>",
+"						<div class=\"text\">"+item.fdAuditNote+"</div>",
+"					</div>",
+"				</div>",
+"			</li>"].join("");
+				})
+				$list.innerHTML=str
+			}
+			// 点击选中
+			function checkedFn(id){
+				let index = checkData.findIndex((item) => {
+					return item.fdId === id
+				})
+				if(index>=0){
+					checkData.splice(index,1)
+					activeFn(id, 'remove')
+				} else {
+					let obj = data.find((item) => item.fdId === id)
+					checkData.push(obj)
+					activeFn(id, 'add')
+				}
+			}
+			// 更新选中数据
+			function updateCheckData (id) {
+				let index = checkData.findIndex((item) => {
+					return item.fdId === id
+				})
+				checkData.splice(index,1)
+			}
+			// 回显选中项
+			function echoCheckData () {
+				const $listItems = $list.querySelectorAll('.item')
+				$listItems.forEach((ele) => {
+					ele.classList.remove('checked')
+				})
+				checkData.forEach((item) => {
+					$listItems.forEach((ele) => {
+						if(ele.getAttribute('id') === item.fdId){
+							ele.classList.remove('checked')
+							ele.classList.add('checked')
+						}
+					})
+				})
+
+			}
+			// 选中样式
+			function activeFn(id, type){
+				const $listItems = $list.querySelectorAll('.item')
+				$listItems.forEach((item) => {
+					if (id === item.getAttribute('id')) {
+						if (type === 'remove') {
+							item.classList.remove('checked')
+						} else {
+							item.classList.add('checked')
+						}
+					}
+					// console.log(item.getAttribute('id'))
+					// item.classList.remove('checked')
+				})
+				// let index = data.findIndex((item) => {
+				// 	return item.fdId === id
+				// })
+				// if (ele) {
+				// 	if (type === 'remove') {
+				// 		ele.classList.remove('checked')
+				// 	} else {
+				// 		ele.classList.add('checked')
+				// 	}
+				// }
+				bottomBoxFn()
+			}
+			// 底部按钮逻辑
+			function bottomBoxFn () {
+				// const $bottomBox = document.querySelector('.bottom-box')
+				// if (checkData.length>0){
+				// 	$bottomBox.classList.remove('hide')
+				// }else{
+				// 	$bottomBox.classList.add('hide')
+				// }
+				const $num = document.querySelector('.num')
+				$num.innerText = checkData.length
+			}
+			// 取消选中
+			function cleanFn () {
+				checkData = []
+				const $listItems = $list.querySelectorAll('.item')
+				$listItems.forEach((item) => {
+					item.classList.remove('checked')
+				})
+				bottomBoxFn()
+			}
+			// 确定选中
+			function confirmFn() {
+				if (checkData.length === 0) {
+					return
+				}
+				let str = ''
+			checkData.forEach((item) => {
+				str += ["<li class='item' id=\""+item.fdId+"\">",
+	"		<span class='item-box'>",
+	"			<span>"+item.fdFactNodeName+" | "+item.fdName+"</span>",
+	"			<span class=\"icon\">",
+	"				<img src=\"./images/delete.png\">",
+	"			</span>",
+	"		</span>",
+	"		</li>"].join("");
+				})
+				$checkedList.innerHTML= str
+				hideList()
+			}
+			// 动态绑定选中事件
+			eventDelegate('.list-box', 'li', 'click', function () { 
+				let id = this.getAttribute('id')
+				// const ele =this
+				checkedFn(id)
+			});
+			eventDelegate('.checked-list', 'li .icon', 'click', function (e) { 
+				let id = this.parentNode.parentNode.getAttribute('id')
+				const ele =this
+				checkedFn(id)
+				// updateCheckData(id,ele)
+				ele.parentNode.parentNode.parentNode.removeChild(ele.parentNode.parentNode)
+			});
+			function eventDelegate (parentSelector, targetSelector, events, callback) {
+				// 触发执行的函数
+				function triFunction (e) {
+					// 兼容性处理
+					var event = e || window.event;
+					// 获取到目标阶段指向的元素
+					var target = event.target || event.srcElement;
+					// 获取到代理事件的函数
+					var currentTarget = event.currentTarget;
+
+					// 处理 matches 的兼容性
+					// if (!Element.prototype.matches) {
+					// 	Element.prototype.matches =
+					// 		Element.prototype.matchesSelector ||
+					// 		Element.prototype.mozMatchesSelector ||
+					// 		Element.prototype.msMatchesSelector ||
+					// 		Element.prototype.oMatchesSelector ||
+					// 		Element.prototype.webkitMatchesSelector ||
+					// 		function(s) {
+					// 			var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+					// 				i = matches.length;
+					// 			while (--i >= 0 && matches.item(i) !== this) {}
+					// 			return i > -1;            
+					// 		};
+					// }
+
+					// 遍历外层并且匹配
+					while (target&&target !== currentTarget) {
+						// 判断是否匹配到我们所需要的元素上
+						if (target&&target.matches(targetSelector)) {
+							var sTarget = target;
+							// 执行绑定的函数，注意 this
+							callback.call(sTarget, Array.prototype.slice.call(arguments))
+						}
+						target = target.parentNode;
+					}
+				}
+
+				// 如果有多个事件的话需要全部一一绑定事件
+				events.split('.').forEach(function (evt) {
+					// 多个父层元素的话也需要一一绑定
+					Array.prototype.slice.call(document.querySelectorAll(parentSelector)).forEach(function ($p) {
+						$p.addEventListener(evt, triFunction);
+					});
+				});
+			}
+	}
+	</script>
+</body>
+</html>

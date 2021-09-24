@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D2DDF9" offset="0%"></stop>
+            <stop stop-color="#7A9DF0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FBF2D1" offset="0%"></stop>
+            <stop stop-color="#F5E0A4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.25,3.25 C13.8022847,3.25 14.25,3.69771525 14.25,4.25 L14.25,12.25 C14.25,12.8022847 13.8022847,13.25 13.25,13.25 L11.9844268,13.250799 C11.9947049,13.1686441 12,13.0849404 12,13 C12,11.8954305 11.1045695,11 10,11 C9.74627862,11 9.50359201,11.0472454 9.28025781,11.1334187 C9.26001482,11.0088673 9.25,10.8806032 9.25,10.75 L9.25,5.75 C9.25,4.36928813 10.3692881,3.25 11.75,3.25 L13.25,3.25 Z M5.25,5.75 C6.63071187,5.75 7.75,6.86928813 7.75,8.25 C7.75,9.63071187 6.63071187,10.75 5.25,10.75 C3.86928813,10.75 2.75,9.63071187 2.75,8.25 C2.75,6.86928813 3.86928813,5.75 5.25,5.75 Z" id="path-3"></path>
+        <filter x="-52.2%" y="-60.0%" width="204.3%" height="220.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.423529412   0 0 0 0 0.517647059   0 0 0 0 0.792156863  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FBF2D1" offset="0%"></stop>
+            <stop stop-color="#F5E0A4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-会议首页" transform="translate(-2112.000000, -1435.000000)">
+            <g id="编组-15" transform="translate(2100.000000, 1187.000000)">
+                <g id="报名/代报名人" transform="translate(12.000000, 248.000000)">
+                    <g id="报名/已代报名人">
+                        <g transform="translate(18.000000, 18.000000) scale(1, -1) rotate(-90.000000) translate(-18.000000, -18.000000) ">
+                            <rect id="蒙版" fill="#FFFFFF" opacity="0.01" x="0" y="0" width="36" height="36"></rect>
+                            <circle id="椭圆形" fill="#DEECFE" cx="19" cy="19" r="13"></circle>
+                            <g id="编组-41" transform="translate(10.000000, 3.000000)">
+                                <rect id="矩形" fill="url(#linearGradient-1)" x="0.5" y="0.5" width="17" height="23" rx="1"></rect>
+                                <g id="形状结合">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                </g>
+                                <path d="M9.75,13.25 C10.1642136,13.25 10.5,13.5857864 10.5,14 L10.5,16 L12.5,16 C12.9142136,16 13.25,16.3357864 13.25,16.75 C13.25,17.1642136 12.9142136,17.5 12.5,17.5 L10.5,17.5 L10.5,19.5 C10.5,19.9142136 10.1642136,20.25 9.75,20.25 C9.33578644,20.25 9,19.9142136 9,19.5 L9,17.5 L7,17.5 C6.58578644,17.5 6.25,17.1642136 6.25,16.75 C6.25,16.3357864 6.58578644,16 7,16 L9,16 L9,14 C9,13.5857864 9.33578644,13.25 9.75,13.25 Z" id="形状结合" fill="url(#linearGradient-5)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

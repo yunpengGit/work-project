@@ -1,0 +1,41 @@
+[
+  {
+    "title": "基础组件",
+    "list":[
+      { "x": 0, "y": 0, "w": 12, "h": 26, "i": "Information","name": "Information", "icon": "zonghexinxi", "label": "资讯栏目"  },
+      { "x": 0, "y": 0, "w": 12, "h": 19, "i": "CarouseItem","name": "CarouseItem", "icon": "lunbo", "label": "轮播" },
+      { "x": 0, "y": 0, "w": 4, "h": 16, "i": "SimpleNewItem","name": "SimpleNewItem", "icon": "xinwenzhongxin", "label": "新闻中心"  },
+      { "x": 0, "y": 0, "w": 4, "h": 16, "i": "SimplePicItem","name": "SimplePicItem", "icon": "tebiexinwen", "label": "图片新闻"  }
+    ]
+  },
+  {
+    "title": "数据组件",
+    "list":[
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartBarSort","name": "ChartBarSort", "icon": "tiaoxingtu", "label": "条形图" },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartBarSort0","name": "ChartBarSort0", "icon": "zhuzhuangtu", "label": "柱状图" },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartGauge","name": "ChartGauge", "icon": "yibiaopan", "label": "仪表盘"  },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartLine","name": "ChartLine", "icon": "zhexiantu", "label": "折线图" },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartPie","name": "ChartPie", "icon": "bingtu", "label": "饼图"  },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartScatter","name": "ChartScatter", "icon": "sandian", "label": "散点图"  },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartMjMap","name": "ChartMjMap", "icon": "mianji", "label": "面积图"  },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartKline","name": "ChartKline", "icon": "kline", "label": "K 线图"  },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartRadar ","name": "ChartRadar ", "icon": "leida", "label": "雷达图"  },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartBoxPlot ","name": "ChartBoxPlot ", "icon": "hexutu", "label": "盒须图"  },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartHeatMap ","name": "ChartHeatMap ", "icon": "reli", "label": "热力图"  },
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "ChartGraph ","name": "ChartGraph ", "icon": "guanxi", "label": "关系图"  },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartSunBurst ","name": "ChartSunBurst ", "icon": "xuritu", "label": "旭日图"  },
+      { "x": 8, "y": 0, "w": 4, "h": 25, "i": "ChartMap ","name": "ChartMap ", "icon": "map", "label": "地图"  }
+    ]
+  },
+  {
+    "title": "业务组件",
+    "list":[
+      { "x": 0, "y": 0, "w": 8, "h": 25, "i": "Todo","name": "Todo", "icon": "daibanjuhe", "label": "待办聚合" },
+      { "x": 8, "y": 0, "w": 4, "h": 16, "i": "Notice","name": "Notice", "icon": "tongzhigonggao", "label": "通知公告"  },
+      { "x": 8, "y": 0, "w": 4, "h": 19, "i": "Schedule","name": "Schedule", "icon": "richeng" , "label": "日程" },
+      { "x": 0, "y": 0, "w": 8, "h": 10, "i": "Email","name": "Email", "icon": "weiduyoujian", "label": "未读邮件"  },
+      { "x": 0, "y": 0, "w": 8, "h": 10, "i": "Application","name": "Application", "icon": "changyongyingyong", "label": "常用应用"  },
+      { "x": 8, "y": 0, "w": 4, "h": 10, "i": "CommonService","name": "CommonService", "icon": "changbanyewu", "label": "常办业务"  }
+    ]
+  }
+]

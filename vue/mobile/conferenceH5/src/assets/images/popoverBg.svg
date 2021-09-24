@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="144px" viewBox="0 0 128 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 3备份 2</title>
+    <defs>
+        <path d="M22.2555408,16 L87.3063969,16 C88.193658,16 88.508151,15.9562298 88.8521208,15.8569622 C89.1960906,15.7576946 89.4971078,15.6029298 89.7779815,15.3809405 C90.0588552,15.1589512 90.2774421,14.9286439 90.793698,14.2070401 L94.7298793,8.70518856 C95.2119025,8.03143404 96.1488455,7.87600508 96.8226,8.35802826 C96.9566012,8.45389653 97.073892,8.57118736 97.1697603,8.70518856 L101.105942,14.2070401 C101.622198,14.9286439 101.840784,15.1589512 102.121658,15.3809405 C102.402532,15.6029298 102.703549,15.7576946 103.047519,15.8569622 C103.391489,15.9562298 103.705982,16 104.593243,16 L109.194338,16 C112.953001,16 116,19.0469986 116,22.8056619 L116,117.744459 C116,121.310534 115.628698,122.603679 114.931469,123.907383 C114.234241,125.211087 113.211087,126.234241 111.907383,126.931469 C110.603679,127.628698 109.310534,128 105.744459,128 L22.2555408,128 C18.6894658,128 17.3963209,127.628698 16.0926172,126.931469 C14.7889135,126.234241 13.7657592,125.211087 13.0685308,123.907383 C12.3713024,122.603679 12,121.310534 12,117.744459 L12,26.2555408 C12,22.6894658 12.3713024,21.3963209 13.0685308,20.0926172 C13.7657592,18.7889135 14.7889135,17.7657592 16.0926172,17.0685308 C17.3963209,16.3713024 18.6894658,16 22.2555408,16 Z" id="path-1"></path>
+        <filter x="-19.2%" y="-12.3%" width="138.5%" height="132.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0980392157   0 0 0 0 0.121568627   0 0 0 0 0.141176471  0 0 0 0.158380682 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="会务组" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报到" transform="translate(-243.000000, -254.000000)">
+            <g id="Rectangle-3备份" transform="translate(243.000000, 254.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill-opacity="0.717213" fill="#191F24" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

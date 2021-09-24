@@ -1,0 +1,9 @@
+[
+  { "x": 0, "y": 0, "w": 8, "h": 24, "i": "Todo","name": "Todo", "icon": "daibanjuhe", "label": "待办聚合" },
+  { "x": 8, "y": 0, "w": 4, "h": 14, "i": "Notice","name": "Notice", "icon": "tongzhigonggao", "label": "通知公告"  },
+  { "x": 0, "y": 24, "w": 8, "h": 10, "i": "Email","name": "Email", "icon": "weiduyoujian", "label": "未读邮件"  },
+  { "x": 0, "y": 34, "w": 8, "h": 10, "i": "Application","name": "Application", "icon": "changyongyingyong", "label": "常用应用"  },
+  { "x": 8, "y": 34, "w": 4, "h": 10, "i": "CommonService","name": "CommonService", "icon": "changbanyewu", "label": "常办业务"  },
+  { "x": 8, "y": 14, "w": 4, "h": 20, "i": "Schedule","name": "Schedule", "icon": "richeng" , "label": "日程" },
+  { "x": 0, "y": 50, "w": 12, "h": 26, "i": "Information","name": "Information", "icon": "zonghexinxi", "label": "资讯栏目"  }
+]

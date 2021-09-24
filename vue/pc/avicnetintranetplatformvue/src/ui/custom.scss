@@ -1,0 +1,268 @@
+@charset "utf-8";
+/*
+ * @Descripttion: UI框架重置样式
+ * @Author: zongmz
+ * @Date: 2021-03-31 09:36:02
+ * @LastEditors: zongmz
+ * @LastEditTime: 2021-04-14 16:05:07
+ */
+ 
+@import './var.scss';
+@import './flex.scss';
+
+.el-badge-item{
+  .el-badge__content{
+    height: 14px !important;
+    line-height: 14px !important;
+    padding: 0 4px !important;
+    border: 0 !important;
+    &.is-fixed{
+      right: 5px;
+    }
+  }
+}
+
+.el-dropdown{
+  cursor: pointer;
+}
+
+.header-search-input{
+  .el-input__inner{
+    border: 0;
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+  }
+}
+
+.el-input:not(.el-input--prefix):not(.el-pagination__editor) {
+  .el-input__inner {
+    padding-left: 8px;
+  }
+}
+
+
+/* 抽屉 */
+.el-drawer__container {
+  .el-drawer__header {
+    padding: 0 16px;
+    height: 56px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e2e2e2;
+    flex-shrink: 0;
+    box-shadow: 0px -1px 0px 0px rgba(25, 31, 36, 0.08);
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      color: #191F24;
+    }
+  }
+
+  .el-drawer__body {
+    height: calc(100% - 56px);
+  }
+}
+
+.sp-page-box{
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+}
+
+// 检索
+.sp-form-box {
+  padding: 16px 16px 0 16px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
+  border-radius: 4px 4px 0px 0px;  
+  .el-form {
+    .el-form-item {
+      @include flex-inline;
+      margin-left: 36px;
+      margin-right: 0;
+      margin-bottom: 16px;
+      &:first-child {
+        margin-left: 0;
+      }
+      & + .el-button {
+        margin-left: 15px;
+      }
+      .el-form-item__label {
+        padding: 0;
+        font-weight: 400;
+        margin-right:16px;
+        color: rgba(25, 31, 36, 0.64);
+      }
+      .el-input .el-input__inner,
+      .el-date-editor--daterange,
+      .el-date-editor--datetimerange {
+        &.el-input__inner {
+          width: 250px;  // 与UI沟通，检索统一的宽度，如果不合适，修改各自的模块
+        }
+      }
+    }
+    .el-button + .el-button {
+      margin-left: 12px;
+    }
+  }
+  .filter-box {
+    position: relative;
+    // 高级搜索
+    .expand-box-dis {
+      position: absolute;
+      z-index: 9;
+      background: #fff;
+      @include flex-multi();
+      box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;  
+      padding-top: 14px; 
+      .el-form-item {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .expand-box-btn {
+        padding: 13px 16px;
+        text-align: right;
+        border-top: 1px solid #F4F4F4;
+      }
+    }
+    .filter-handle {
+      float: right;
+    }
+  }
+}
+
+// 表格
+.sp-table-page {
+  &-fixed {
+    position: relative;
+    z-index: 98;
+  }
+  .sp-handle {
+    padding: 12px 16px;
+  }
+  .el-table {
+    &::before {
+      display: none;
+    }
+    th {
+      background-color: #F0F7FF;
+      font-weight: normal;
+    }
+    .el-button--text {
+      padding: 0 !important;
+      color: #499CF8;
+      &:hover {
+         color: #3889E3;
+      }
+    }
+  }
+}
+
+// 分页
+.sp-pagination {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 1px 0px 0px rgba(25, 31, 36, 0.12);    
+  border-top: 1px solid rgba(25, 31, 36, 0.12);
+  .el-pagination {
+    text-align: right;
+    font-weight: normal;
+    .el-pagination__jump {
+      color: rgba(25, 31, 36, 0.48);
+    }
+  }
+}
+
+// 横向排列按钮组
+.el-radio-group.radio-diy{
+  .el-radio{
+    margin-right: 18px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    .el-radio__input{
+      display: none;
+    }
+    .el-radio__label{
+      padding-left: 0px;
+    }
+    color: $--color-text-primary;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid $--border-color-base; 
+  }
+  .el-radio:hover {
+    color: $--color-primary;
+    background: rgba($--color-primary,0.08);
+    border: 1px solid $--color-primary;
+  }
+  .el-radio.is-checked{
+    color: $--color-primary;
+    border-color:  $--color-primary;
+  }
+}
+
+.el-tree-content {
+  position: relative;
+  .el-select-drow-menu {
+    width: 100%;
+    height: 240px;
+    -webkit-transform-origin: center top 0;
+    transform-origin: center top 0;
+    z-index: 2037;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #dcdfe6;
+    border-top: 0;
+    overflow-y: auto;
+  }
+}
+
+// 下列为大中小转换
+@mixin del($sc: 1, $fs: 14px){
+  .el-radio-group.radio-diy .el-radio {
+    padding: 6px * $sc 10px * $sc !important;
+    .el-radio__label {
+      font-size: $fs !important;
+    }
+  }
+  .sp-form-box {
+    .el-input .el-input__inner,
+    .el-date-editor--daterange,
+    .el-date-editor--datetimerange {
+      &.el-input__inner {
+        // 与UI沟通，检索统一的宽度，如果不合适，修改各自的模块
+        width: 250px * $sc !important;
+      }
+    }
+  }
+  
+  // 针对 【Radio 的尺寸，仅在 border 为真时有效】 添加大中小处理
+  .el-radio:not(.is-bordered) {
+    @include flex-inline;
+    .el-radio__label {
+      font-size: $fs;
+    }
+    .el-radio__inner {
+       width: 14px  * $sc;
+       height: 14px * $sc;
+    }   
+  }
+  // 针对 【Checkbox 的尺寸，仅在 border 为真时有效】 添加大中小处理
+
+  // 针对 【输入框尺寸，只在 type!="textarea" 时有效】 添加大中小处理
+
+}
+@import '@/ui/size/mixin.scss';
+@import '@/ui/size/scale.scss';

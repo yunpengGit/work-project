@@ -1,0 +1,274 @@
+@charset "utf-8";
+/*
+ * @Descripttion: 公共样式
+ * @Author: zongmz
+ * @Date: 2021-03-31 09:36:02
+ * @LastEditors: zongmz
+ * @LastEditTime: 2021-05-11 10:50:50
+ */
+
+html,
+body,
+#app {
+  width: 100%;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-family: 
+  /* 1 */ -apple-system, BlinkMacSystemFont, 
+  /* 2 */ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
+  /* 3 */ "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  // background-color: #EEF0F4;
+  background-color: #F4F8F9;
+  color: #191F24;
+  min-width: 1366px;
+  height: 100%;
+  // overflow-x: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  -moz-text-decoration-skip: objects;
+  text-decoration-skip: objects;
+  cursor: pointer;
+}
+
+ul,
+li,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+span{
+  display: inline-block;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.console-box {
+  padding: 20px;
+  min-width: 1080px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.console-box-body {
+  margin-top: 20px;
+}
+
+/*Link UI*/
+.link-a {
+  color: #728acf;
+}
+
+.red {
+  color: #ef4747;
+}
+
+.green {
+  color: #4eaf82;
+}
+
+.orange {
+  color: #f97e48;
+}
+
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: -8px;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out, margin 100ms ease-out,
+    height 100ms ease-out;
+  transition: background-color 100ms ease-out, margin 100ms ease-out,
+    height 100ms ease-out;
+  background-color: rgba(48, 121, 244, 0.1);
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.3);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(48, 121, 244, 0.5);
+}
+
+.hiddens {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.wraning {
+  color: #e29735;
+}
+
+/* 门户首页块公用样式 */
+// @import './themeVar.scss';
+.continer-box {
+  width: 100%;
+  // overflow: hidden; // 代办筛选下拉
+  &-title {
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #191f24;
+    // @include fs(2);
+    font-weight: bold;
+    box-sizing: border-box;
+    // overflow: hidden;
+    &-icon {
+      width: 18px;
+      height: 18px;
+      margin: -2px 10px 0 0;
+      svg{
+        vertical-align: text-bottom;
+      }
+    }
+    .info-btn {
+      height: 50px;
+      color: #8f9aac;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-icon {
+        background: #ffffff;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 5px;
+        height: 24px;
+        // @include fs(-2);
+        border-radius: 4px;
+        border: 1px solid #e4e4e4;
+        svg{
+          margin-right: 2px;
+          width: 14px;
+          // @include fs(-2);
+          color: #8f9aac;
+        }
+        &:hover{
+          color: #1e89ff;
+          border-color: #1e89ff;
+          svg{
+            color: #1e89ff;
+          }
+        }
+      }
+    }
+    .info-btn-notext{
+      margin-left: 10px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-icon {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #E4E4E4;
+        svg{
+          width: 16px;
+          font-size: 14px;
+          color: #333;
+
+        }
+        &:hover{
+          border-color: #1e89ff;
+          svg{
+            color: #1e89ff;
+          }
+        }
+      }
+    }
+  }
+}
+*::-webkit-scrollbar {
+	margin-right: 3px;
+  width: 0;
+  height: 6px;
+	background: rgba(255, 255, 255, 0);
+}
+*::-webkit-scrollbar-thumb{
+	margin-right: 3px;
+  background: #CCCCCC;
+	border-radius: 10px;
+}
+
+*::-ms-scrollbar {
+	margin-right: 3px;
+  width: 0;
+  height: 6px;
+	background: rgba(255, 255, 255, 0);
+}
+*::-ms-scrollbar-thumb{
+	margin-right: 3px;
+  background: #CCCCCC;
+	border-radius: 10px;
+}
+
+*::-moz-scrollbar {
+	margin-right: 3px;
+  width: 0;
+  height: 6px;
+	background: rgba(255, 255, 255, 0);
+}
+*::-moz-scrollbar-thumb{
+	margin-right: 3px;
+  background: #CCCCCC;
+	border-radius: 10px;
+}
+/* vuedraggableTransition */
+.flip-list-move {
+  transition: transform 0.5s;
+}
+.no-move {
+  transition: transform 0s;
+}

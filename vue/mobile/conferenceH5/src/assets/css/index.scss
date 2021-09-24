@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './core.scss';
+@import './reset.scss';
+
+html,
+body .app {
+  color: #191F24;
+  font-family: PingFangSC-Medium, PingFang SC;
+  background-color: $background-color;
+}
+
+.app-container {
+  padding-bottom: 50px;
+}

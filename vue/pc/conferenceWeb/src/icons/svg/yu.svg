@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>yu</title>
+    <g id="icon篇" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-182.000000, -55.000000)" fill-rule="nonzero">
+            <g id="大雨备份" transform="translate(182.000000, 55.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) " x="0" y="0" width="24" height="24"></rect>
+                <path d="M12,3 C14.8808173,3 17.2443284,5.21485104 17.4805876,8.03460741 C17.6504319,8.0113815 17.8238868,8 18,8 C20.209139,8 22,9.790861 22,12 C22,14.209139 20.209139,16 18,16 C16.3218713,16 14.8851049,14.9666051 14.2913527,13.5014671 C13.5937513,13.8215497 12.8177153,14 12,14 C11.5960835,14 11.2023365,13.9564592 10.8231965,13.8738151 C10.030375,15.1497893 8.6144762,16 7,16 C4.51471863,16 2.5,13.9852814 2.5,11.5 C2.5,9.11446801 4.35623843,7.16248374 6.70312577,7.00963671 C7.35335172,4.69676758 9.47852521,3 12,3 Z M7,10 L18,10 L18,16 L7,16 L7,10 Z" id="路径-2" fill="#D5E0F7"></path>
+                <rect id="矩形" fill="#88CDFB" transform="translate(7.250000, 19.000000) rotate(-330.000000) translate(-7.250000, -19.000000) " x="6.5" y="17" width="1.5" height="4" rx="0.75"></rect>
+                <rect id="矩形备份-30" fill="#88CDFB" transform="translate(11.250000, 19.000000) rotate(-330.000000) translate(-11.250000, -19.000000) " x="10.5" y="17" width="1.5" height="4" rx="0.75"></rect>
+                <rect id="矩形备份-29" fill="#88CDFB" transform="translate(15.250000, 19.000000) rotate(-330.000000) translate(-15.250000, -19.000000) " x="14.5" y="17" width="1.5" height="4" rx="0.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

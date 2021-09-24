@@ -1,0 +1,94 @@
+.van-cell{
+  margin-top: 8px;
+  padding: 0;
+}
+.list{
+  padding-bottom: 60px;
+  .item{
+    background-color: #fff;
+    .box{
+      padding: 16px;
+      height: 76px;
+      display: flex;
+      .img{
+        padding-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .header{
+          height: 44px;
+          width: 44px;
+          border-radius: 50%;
+        }
+      }
+      .info{
+        flex: 1;
+        .top{
+          display: flex;
+          justify-content: space-between;
+          .name{
+            font-size:17px;
+            font-weight:400;
+            color:rgba(0,14,32,1);
+          }
+          .status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:60px;
+            height:20px;
+            font-size:12px;
+            font-weight:500;
+          }
+          .read{
+            background:rgba(217,251,217,1);
+            border-radius:10px;
+            color:rgba(60,182,60,1);
+          }
+          .unread{
+            background:rgba(255,237,200,1);
+            border-radius:10px;
+            color:rgba(255,157,0,1);
+          }
+          .revoked{
+            background:rgba(243,243,243,1);
+            border-radius:10px;
+            color:rgba(157,157,157,1);
+          }
+        }
+        .bottom{
+          margin-top: 4px;
+          display: flex;
+          justify-content: space-between;
+          .departmentName{
+            font-size:13px;
+            font-weight:400;
+            color:rgba(148,155,164,1);
+            line-height:17px;
+          }
+          .fdReadTime{
+            font-size:13px;
+            font-weight:400;
+            color:rgba(148,155,164,1);
+            line-height:17px;
+          }
+        }
+      }
+    }
+    .title{
+      margin-top: 13px;
+      padding: 0 16px;
+      font-size:13px;
+      font-weight:400;
+      color:rgba(148,155,164,1);
+      line-height:17px;
+    }
+    .content{
+      padding: 0 16px 13px 16px;
+      font-size:14px;
+      font-weight:400;
+      color:rgba(0,14,32,1);
+      line-height:20px;
+    }
+  }
+}

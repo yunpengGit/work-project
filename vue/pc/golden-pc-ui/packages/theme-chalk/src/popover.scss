@@ -1,0 +1,62 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "./popper";
+
+@mixin def($scale: 1,$fsBase: 14px){
+  padding: 18px * $scale 20px * $scale;
+  min-width: 150px * $scale;
+  border-radius: 4px * $scale;
+  padding: 12px * $scale;
+  line-height: 1.4;
+  font-size: $fsBase;
+  .el-popover__title{
+    font-size: 16px * $scale;
+  }
+}
+
+@include b(popover) {
+  position: absolute;
+  background: $--popover-background-color;
+  min-width: 150px;
+  border-radius: 4px;
+  border: 1px solid $--popover-border-color;
+  padding: $--popover-padding;
+  z-index: $--index-popper;
+  color: $--color-text-regular;
+  line-height: 1.4;
+  text-align: justify;
+  font-size: $--popover-font-size;
+  box-shadow: $--box-shadow-light;
+  word-break: break-all;
+
+  @include m(plain) {
+    padding: $--popover-padding-large;
+  }
+
+  @include e(title) {
+    color: $--popover-title-font-color;
+    font-size: $--popover-title-font-size;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  @include e(reference) {
+    &:focus:not(.focusing), &:focus:hover {
+      outline-width: 0;
+    }
+  }
+
+  &:focus:active, &:focus {
+    outline-width: 0;
+  }
+
+  @include m(mini) {
+    @include def();
+  }
+  @include m(small) {
+    @include def(sizeScale($--font-size-base,$--font-size-small), $--font-size-small);
+  }
+  @include m(medium) {
+    @include def(sizeScale($--font-size-base,$--font-size-medium), $--font-size-medium);
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "code": 2000,
+    "success": true,
+    "result": [
+        {
+            "id": 1,
+            "name": "北京",
+            "value": 2
+        },
+        {
+            "id": 2,
+            "name": "上海",
+            "value": 200
+        },
+        {
+            "id": 3333,
+            "name": "西安",
+            "value": 200
+        }
+    
+    ]
+}

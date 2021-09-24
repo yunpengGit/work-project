@@ -1,0 +1,10 @@
+@import 'function.scss';
+@include m('mini'){
+  @include del(1, 14PX)
+}
+@include m('small'){
+  @include del(sizeScale(14px, 16px), 16PX)
+}
+@include m('medium'){
+  @include del(sizeScale(14px, 18px), 18PX)
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="110px" viewBox="0 0 343 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>形状备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#333332" offset="0%"></stop>
+            <stop stop-color="#151413" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0 L339,0 C341.209139,-4.05812251e-16 343,1.790861 343,4 L343,106 C343,108.209139 341.209139,110 339,110 L4,110 C1.790861,110 2.705415e-16,108.209139 0,106 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-2"></path>
+        <linearGradient x1="100%" y1="55.1424152%" x2="0%" y2="44.8575848%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F2F5FC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0 L339,0 C341.209139,-4.05812251e-16 343,1.790861 343,4 L343,106 C343,108.209139 341.209139,110 339,110 L4,110 C1.790861,110 2.705415e-16,108.209139 0,106 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-5"></path>
+        <linearGradient x1="45.1376555%" y1="9.10970237%" x2="54.4008066%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#2063F8" offset="0%"></stop>
+            <stop stop-color="#FDA085" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-住宿/票证安排" transform="translate(-905.000000, -1272.000000)">
+            <g id="形状备份" transform="translate(905.000000, 1272.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                <polygon id="矩形" fill="url(#linearGradient-7)" opacity="0.100000001" mask="url(#mask-6)" transform="translate(236.961906, 76.058171) rotate(-315.000000) translate(-236.961906, -76.058171) " points="205.893413 -14.4418288 266.304372 -14.149138 268.030399 166.558171 207.61944 166.26548"></polygon>
+                <polygon id="矩形备份" fill="url(#linearGradient-7)" opacity="0.100000001" mask="url(#mask-6)" transform="translate(324.068493, 114.500000) rotate(-315.000000) translate(-324.068493, -114.500000) " points="293 24 353.410959 24.2926908 355.136986 205 294.726027 204.707309"></polygon>
+                <polygon id="矩形" fill="url(#linearGradient-7)" opacity="0.100000001" mask="url(#mask-6)" transform="translate(256.721805, 10.961906) scale(-1, 1) rotate(-315.000000) translate(-256.721805, -10.961906) " points="225.653312 -79.5380941 286.064271 -79.2454033 287.790298 101.461906 227.379339 101.169215"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avicnet-portal-ui
+  namespace: kube-ops
+  labels:
+    name: avicnet-portal-ui
+spec:
+  selector:
+    matchLabels:
+      name: avicnet-portal-ui
+  replicas: 1
+  template:
+    metadata:
+      name: avicnet-portal-ui
+      labels:
+        name: avicnet-portal-ui
+    spec:
+      containers:
+        - name: avicnet-portal-ui
+          image: registry.cn-beijing.aliyuncs.com/nwportal/nwportal/avicnet-portal-ui-prod:v2.2.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+

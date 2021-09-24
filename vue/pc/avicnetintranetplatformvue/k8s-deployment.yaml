@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avicnet-platform-ui
+  namespace: kube-ops
+  labels:
+    name: avicnet-platform-ui
+spec:
+  selector:
+    matchLabels:
+      name: avicnet-platform-ui
+  replicas: 2
+  template:
+    metadata:
+      name: avicnet-platform-ui
+      labels:
+        name: avicnet-platform-ui
+    spec:
+      containers:
+        - name: avicnet-platform-ui
+          image: registry.cn-beijing.aliyuncs.com/nwplatform/nwplatform/avicnet-platform-ui-prod:v2.2.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+

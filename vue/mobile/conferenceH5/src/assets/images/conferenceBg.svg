@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="126px" viewBox="0 0 375 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>蓝色背景</title>
+    <defs>
+        <radialGradient cx="100%" cy="57.0004053%" fx="100%" fy="57.0004053%" r="299.547371%" gradientTransform="translate(1.000000,0.570004),scale(0.336000,1.000000),rotate(173.495289),translate(-1.000000,-0.570004)" id="radialGradient-1">
+            <stop stop-color="#00A8FF" offset="0%"></stop>
+            <stop stop-color="#0065D5" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会务组" transform="translate(0.000000, -64.000000)" fill="url(#radialGradient-1)">
+            <g id="矩形备份-14" transform="translate(0.000000, 64.000000)">
+                <path d="M0,0 L375,0 L375,107.818182 C312.5,119.939394 250,126 187.5,126 C125,126 62.5,119.939394 0,107.818182 L0,0 Z" id="矩形备份-11"></path>
+            </g>
+        </g>
+    </g>
+</svg>

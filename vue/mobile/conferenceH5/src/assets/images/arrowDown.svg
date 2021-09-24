@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Other/展开备份</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.098039 0 0 0 0 0.121569 0 0 0 0 0.141176 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="资源组" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="车辆任务管理" transform="translate(-98.000000, -136.000000)">
+            <g id="筛选栏/混合排序备份-4" transform="translate(0.000000, 118.000000)">
+                <g id="Icon/Other/展开备份" transform="translate(16.000000, 15.000000)" filter="url(#filter-1)">
+                    <g transform="translate(82.000000, 3.000000)">
+                        <g id="展开"></g>
+                        <path d="M8.55228035,4.53104631 C8.90652993,4.31638354 9.36772452,4.42954101 9.5823873,4.78379059 C9.78171701,5.11273664 9.6983854,5.53389547 9.40183185,5.76425375 L9.32964301,5.81389754 L6.77736266,7.36048954 C6.3363139,7.62774956 5.79189457,7.64830802 5.33494264,7.42216493 L5.22263734,7.36048954 L2.67035699,5.81389754 C2.3161074,5.59923477 2.20294993,5.13804018 2.4176127,4.78379059 C2.61694242,4.45484455 3.02884294,4.33377895 3.37030093,4.49003319 L3.44771965,4.53104631 L6,6.07763831 L8.55228035,4.53104631 Z" id="路径备份-5" fill="#191F24" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

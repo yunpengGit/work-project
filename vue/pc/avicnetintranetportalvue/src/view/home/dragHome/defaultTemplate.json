@@ -1,0 +1,119 @@
+[
+  {
+    "x": 8,
+    "y": 0,
+    "w": 4,
+    "h": 15,
+    "componentId": "Notice111111111",
+    "componentName": "Notice",
+    "label": "通知公告",
+    "size": null,
+    "moved": false,
+    "i": "Notice111111111",
+    "blockH": 300
+  },
+  {
+    "x": 8,
+    "y": 15,
+    "w": 4,
+    "h": 20,
+    "componentId": "Schedule3333333",
+    "componentName": "Schedule",
+    "label": "日程",
+    "size": null,
+    "moved": false,
+    "i": "Schedule3333333",
+    "blockH": 400
+  },
+  {
+    "x": 0,
+    "y": 35,
+    "w": 8,
+    "h": 11,
+    "componentId": "CommonService55555",
+    "componentName": "CommonService",
+    "label": "常办业务",
+    "size": null,
+    "moved": false,
+    "i": "CommonService55555",
+    "blockH": 220
+  },
+  {
+    "x": 0,
+    "y": 46,
+    "w": 12,
+    "h": 26,
+    "componentId": "Information6",
+    "componentName": "Information",
+    "label": "资讯栏目",
+    "size": null,
+    "moved": false,
+    "i": "Information6",
+    "blockH": 520
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "w": 8,
+    "h": 25,
+    "i": "1624964086866",
+    "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/43cc9a97-25e4-471b-9285-3b6230469bcb.png",
+    "componentId": 10,
+    "componentName": "Custom",
+    "label": "多页签组件",
+    "moved": false,
+    "config": [
+      {
+        "id": "2",
+        "checked": true,
+        "name": "待办",
+        "label": "待办",
+        "componentName": "Upcoming",
+        "fixed": false
+      },
+      {
+        "id": "3",
+        "checked": true,
+        "name": "待阅",
+        "label": "待阅",
+        "componentName": "ToBeRead",
+        "fixed": false
+      },
+      {
+        "id": "4",
+        "checked": true,
+        "name": "关注",
+        "label": "关注",
+        "componentName": "FocusWork",
+        "fixed": false
+      }
+    ],
+    "blockH": 500
+  },
+  {
+    "x": 0,
+    "y": 25,
+    "w": 8,
+    "h": 10,
+    "i": "1624964126874",
+    "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/dda3af40-45b1-418f-b2ff-2496b162f373.png",
+    "componentId": 3,
+    "componentName": "Email",
+    "label": "未读邮件",
+    "moved": false,
+    "blockH": 200
+  },
+  {
+    "x": 8,
+    "y": 35,
+    "w": 4,
+    "h": 11,
+    "i": "1624964167146",
+    "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/437da631-1873-44cf-a769-ea45736c18bb.png",
+    "componentId": 4,
+    "componentName": "Application",
+    "label": "常用应用",
+    "moved": false,
+    "blockH": 220
+  }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/File/备用/文件夹</title>
+    <defs>
+        <radialGradient cx="79.3880854%" cy="21.1824054%" fx="79.3880854%" fy="21.1824054%" r="136.918617%" gradientTransform="translate(0.793881,0.211824),scale(0.709091,1.000000),rotate(144.854634),translate(-0.793881,-0.211824)" id="radialGradient-1">
+            <stop stop-color="#FFCC1B" offset="0%"></stop>
+            <stop stop-color="#FF7A1D" offset="100%"></stop>
+        </radialGradient>
+        <path d="M9.5638852,11.4 L26.4361148,11.4 C27.3276335,11.4 27.6509198,11.4928256 27.9768457,11.6671327 C28.3027716,11.8414398 28.5585602,12.0972284 28.7328673,12.4231543 C28.9071744,12.7490802 29,13.0723665 29,13.9638852 L29,24.4361148 C29,25.3276335 28.9071744,25.6509198 28.7328673,25.9768457 C28.5585602,26.3027716 28.3027716,26.5585602 27.9768457,26.7328673 C27.6509198,26.9071744 27.3276335,27 26.4361148,27 L9.5638852,27 C8.67236646,27 8.34908022,26.9071744 8.0231543,26.7328673 C7.69722837,26.5585602 7.4414398,26.3027716 7.2671327,25.9768457 C7.09282561,25.6509198 7,25.3276335 7,24.4361148 L7,13.9638852 C7,13.0723665 7.09282561,12.7490802 7.2671327,12.4231543 C7.4414398,12.0972284 7.69722837,11.8414398 8.0231543,11.6671327 C8.34908022,11.4928256 8.67236646,11.4 9.5638852,11.4 Z" id="path-2"></path>
+        <filter x="-31.8%" y="-32.1%" width="163.6%" height="189.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.521568627   0 0 0 0 0.109803922  0 0 0 0.35726822 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="参会人报名成功备份-5" transform="translate(-126.000000, -266.000000)">
+            <g id="编组备份-3" transform="translate(12.000000, 256.000000)">
+                <g id="编组-8" transform="translate(88.000000, 0.000000)">
+                    <g id="Icon/File/备用/文件夹" transform="translate(26.000000, 10.000000)">
+                        <g id="文件夹" transform="translate(0.000000, 0.000000)">
+                            <path d="M9,8 L14.9225128,8 C15.6652181,8 16.3660792,8.34385625 16.8206025,8.93124013 L22.6,16.4 L22.6,16.4 L7,16.4 L7,10 C7,8.8954305 7.8954305,8 9,8 Z" id="矩形备份-3" fill="#F67B0C"></path>
+                            <g id="矩形">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

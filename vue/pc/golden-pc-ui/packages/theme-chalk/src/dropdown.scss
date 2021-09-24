@@ -1,0 +1,166 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "button";
+@import "./popper";
+
+@mixin def($scale: 1,$fsBase: 14px){
+  padding: 3px * $scale 0;
+  @include e(item) {
+    line-height: 24px * $scale;
+    padding: 0 10px * $scale;
+    font-size: $fsBase;
+
+    &.el-dropdown-menu__item--divided {
+      $divided-offset: 3px * $scale;
+      margin-top: $divided-offset;
+
+      &:before {
+        height: $divided-offset * $scale;
+        margin: 0 -10px;
+      }
+    }
+  }
+}
+@mixin defIcon($scale: 1,$fsBase: 14px){
+  .el-dropdown__caret-button{
+    padding-left: 5px * $scale;
+    padding-right: 5px * $scale;
+    .el-dropdown__icon {
+      font-size: 12px  * $scale;
+    }
+  }
+}
+@include b(dropdown) {
+  display: inline-block;
+  position: relative;
+  color: $--color-text-regular;
+  font-size: $--font-size-base;
+
+  .el-button-group {
+    display: block;
+    .el-button {
+      float: none;
+    }
+  }
+
+  & .el-dropdown__caret-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    border-left: none;
+
+    &::before {
+      $gap: 5px;
+
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      top: $gap;
+      bottom: $gap;
+      left: 0;
+      background: mix(white, transparent, 50%);
+    }
+
+    &.el-button--default::before {
+      background: mix($--button-default-border-color, transparent, 50%);
+    }
+
+    &:hover {
+      &::before {
+        top: 0;
+        bottom: 0;
+      }
+    }
+
+    & .el-dropdown__icon {
+      padding-left: 0;
+    }
+  }
+  @include m(medium) {
+    @include defIcon(sizeScale($--font-size-extra-small,$--font-size-medium), $--font-size-medium);
+  }
+
+  @include m(small) {
+    @include defIcon(sizeScale($--font-size-extra-small,$--font-size-small), $--font-size-small);
+  }
+
+  @include m(mini) {
+    @include defIcon(sizeScale($--font-size-extra-small,$--font-size-base), $--font-size-base);
+  }
+  @include e(icon) {
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  .el-dropdown-selfdefine { // 自定义
+    &:focus:active, &:focus:not(.focusing) {
+      outline-width: 0;
+    }
+  }
+}
+
+@include b(dropdown-menu) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0;
+  margin: 5px 0;
+  background-color: $--color-white;
+  border: 1px solid $--border-color-lighter;
+  border-radius: $--border-radius-base;
+  box-shadow: $--dropdown-menu-box-shadow;
+
+  @include e(item) {
+    list-style: none;
+    line-height: 36px;
+    padding: 0 20px;
+    margin: 0;
+    font-size: $--font-size-base;
+    color: $--color-text-regular;
+    cursor: pointer;
+    outline: none;
+    &:not(.is-disabled):hover, &:focus {
+      background-color: $--dropdown-menuItem-hover-fill;
+      color: $--dropdown-menuItem-hover-color;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+
+    @include m(divided) {
+      $divided-offset: 6px;
+
+      position: relative;
+      margin-top: $divided-offset;
+      border-top: 1px solid $--border-color-lighter;
+
+      &:before {
+        content: '';
+        height: $divided-offset;
+        display: block;
+        margin: 0 -20px;
+        background-color: $--color-white;
+      }
+    }
+
+    @include when(disabled) {
+      cursor: default;
+      color: $--font-color-disabled-base;
+      pointer-events: none;
+    }
+  }
+
+  @include m(medium) {
+    @include def(sizeScale($--font-size-extra-small,$--font-size-medium), $--font-size-medium);
+  }
+
+  @include m(small) {
+    @include def(sizeScale($--font-size-extra-small,$--font-size-small), $--font-size-small);
+  }
+
+  @include m(mini) {
+    @include def(sizeScale($--font-size-extra-small,$--font-size-base), $--font-size-base);
+  }
+}

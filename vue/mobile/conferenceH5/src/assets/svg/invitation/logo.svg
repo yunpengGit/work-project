@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <radialGradient cx="100%" cy="0%" fx="100%" fy="0%" r="162.5%" gradientTransform="translate(1.000000,0.000000),scale(1.000000,0.615385),rotate(90.000000),translate(-1.000000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#DAF2FF" offset="0%"></stop>
+            <stop stop-color="#6CB8FF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="100%" gradientTransform="translate(0.000000,0.500000),scale(0.818182,1.000000),rotate(90.000000),translate(-0.000000,-0.500000)" id="radialGradient-2">
+            <stop stop-color="#D3F0FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="100%" cy="0%" fx="100%" fy="0%" r="162.5%" gradientTransform="translate(1.000000,0.000000),scale(1.000000,0.615385),rotate(90.000000),translate(-1.000000,-0.000000)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D1E7FF" offset="99.9972684%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="报名信息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的二维码" transform="translate(-163.000000, -398.000000)">
+            <g id="编组-2" transform="translate(20.000000, 84.000000)">
+                <g transform="translate(143.000000, 314.000000)">
+                    <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="50" height="50" rx="11"></rect>
+                    <path d="M16.5373139,3 L33.4626861,3 C38.1699051,3 39.8768564,3.49011923 41.5977453,4.41046068 C43.3186342,5.33080213 44.6691979,6.6813658 45.5895393,8.40225469 C46.5098808,10.1231436 47,11.8300949 47,16.5373139 L47,33.4626861 C47,38.1699051 46.5098808,39.8768564 45.5895393,41.5977453 C44.6691979,43.3186342 43.3186342,44.6691979 41.5977453,45.5895393 C39.8768564,46.5098808 38.1699051,47 33.4626861,47 L16.5373139,47 C11.8300949,47 10.1231436,46.5098808 8.40225469,45.5895393 C6.6813658,44.6691979 5.33080213,43.3186342 4.41046068,41.5977453 C3.49011923,39.8768564 3,38.1699051 3,33.4626861 L3,16.5373139 C3,11.8300949 3.49011923,10.1231436 4.41046068,8.40225469 C5.33080213,6.6813658 6.6813658,5.33080213 8.40225469,4.41046068 C10.1231436,3.49011923 11.8300949,3 16.5373139,3 Z" id="矩形备份-19" fill="#1E89FF"></path>
+                    <path d="M22.945,30.519 L13.56,34.68 L13.56,26.36 L13.561,26.359 L22.9466667,22.2 L22.945,22.2 L13.56,26.36 L13.56,18.04 L13.561,18.039 L22.9466667,13.88 L22.9466667,13.88 L27.64,11.8 L27.64,28.44 L22.9466667,30.52 L22.945,30.519 Z" id="形状结合备份-30" fill="url(#radialGradient-1)"></path>
+                    <polygon id="路径-6备份-29" fill="url(#radialGradient-2)" points="13.56 26.32 23.24 22.36 23.24 30.28"></polygon>
+                    <path d="M23.24,22.44 L32.6266667,26.6 L32.6266667,26.6 L23.24,22.44 L32.6266667,18.28 L37.32,16.2 L37.32,32.84 L32.6266667,34.92 L23.24,39.08 L23.24,22.44 Z" id="形状结合备份-31" fill="url(#radialGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

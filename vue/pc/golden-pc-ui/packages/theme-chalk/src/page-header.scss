@@ -1,0 +1,69 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@mixin def($scale: 1,$fsBase: 14px){
+  line-height: 24px * $scale;
+  .el-page-header__left {
+    .el-icon-back{
+      font-size: $--font-size-medium * $scale;
+    }
+    &::after{
+      height: $--font-size-small * $scale;
+    }
+  }
+  .el-page-header__title{
+    font-size: $fsBase;
+  }
+  .el-page-header__content {
+    font-size: $--font-size-medium * $scale;
+  }
+}
+
+@include b(page-header) {
+  display: flex;
+  line-height: 24px;
+
+  @include e(left) {
+    display: flex;
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 16px;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $--border-color-base;
+    }
+
+    .el-icon-back {
+      font-size: 18px;
+      margin-right: 6px;
+      align-self: center;
+    }
+
+    @include e(title) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  @include e(content) {
+    font-size: 18px;
+    color: $--color-text-primary;
+  }
+  
+  @include m(mini) {
+    @include def();
+  }
+  @include m(small) {
+    @include def(sizeScale($--font-size-base,$--font-size-small), $--font-size-small);
+  }
+  @include m(medium) {
+    @include def(sizeScale($--font-size-base,$--font-size-medium), $--font-size-medium);
+  }
+}

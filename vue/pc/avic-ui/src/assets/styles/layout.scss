@@ -1,0 +1,121 @@
+.header-container {
+  background: #00274C;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  -webkit-transition: width .28s;
+  transition: width .28s;
+  .header-container-box{
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  
+    .breadcrumb-container {
+      float: left;
+    }
+  
+    .errLog-container {
+      display: inline-block;
+      vertical-align: top;
+    }
+  
+    .left-container{
+      float: left;
+      height: 100%;
+      line-height: 50px;
+      .logo-box{
+        width: 318px;
+        height: 50px;
+        margin-left: 16px;
+        img{
+          width: 318px;
+          height: 38px;
+          margin-top: 6px;
+        }
+      }
+    }
+    
+    .right-container {
+      float: right;
+      height: 100%;
+  
+      &:focus {
+        outline: none;
+      }
+  
+      .top-menu{
+        float: right;
+        .top-menu-item{
+          display: inline-block;
+          padding: 0 12px;
+          padding-top: 3px;
+          line-height: 44px;
+          color: rgba(255, 255, 255, 0.64);
+          border-bottom: 3px solid #00274C;
+          &:hover{
+            background: rgba(255, 255, 255, 0.08);
+            padding: 3px 12px;
+            color: #FFFFFF;
+          }
+          &.router-link-active{
+            border-bottom: 3px solid #1E89FF;
+          }
+        }
+      }
+  
+      .right-menu{
+        float: right;
+        height: 100%;
+        line-height: 50px;
+        margin-left: 50px;
+        .right-menu-item {
+          display: inline-block;
+          padding: 0 8px;
+          height: 100%;
+          font-size: 18px;
+          color: #fff;
+          vertical-align: text-bottom;
+    
+          &.hover-effect {
+            cursor: pointer;
+            transition: background 0.3s;
+    
+            &:hover {
+              background: rgba(0, 0, 0, 0.025);
+            }
+          }
+        }
+      }
+  
+      
+  
+      .avatar-container {
+        margin-right: 30px;
+  
+        .avatar-wrapper {
+          margin-top: 5px;
+          position: relative;
+  
+          .user-avatar {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+          }
+  
+          .el-icon-caret-bottom {
+            cursor: pointer;
+            position: absolute;
+            right: -20px;
+            top: 15px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
+}

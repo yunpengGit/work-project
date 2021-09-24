@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/状态/Safe</title>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="参会人报名审核中" transform="translate(-129.000000, -76.000000)">
+            <g id="Navigition-Bar/icon+icon" transform="translate(0.000000, 64.000000)">
+                <g id="Safe" transform="translate(129.000000, 12.000000)">
+                    <path d="M10,1.25 C14.8324916,1.25 18.75,5.16750844 18.75,10 C18.75,14.8324916 14.8324916,18.75 10,18.75 C5.16750844,18.75 1.25,14.8324916 1.25,10 C1.25,5.16750844 5.16750844,1.25 10,1.25 Z" id="路径" fill="#F8B700"></path>
+                    <circle id="椭圆形备份-2" fill="#FFFFFF" cx="14.5" cy="10" r="1.5"></circle>
+                    <circle id="椭圆形备份-3" fill="#FFFFFF" cx="10" cy="10" r="1.5"></circle>
+                    <circle id="椭圆形备份-4" fill="#FFFFFF" cx="5.5" cy="10" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

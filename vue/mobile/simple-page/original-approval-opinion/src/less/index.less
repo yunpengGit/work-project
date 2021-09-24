@@ -1,0 +1,48 @@
+@import './base.less';
+body{
+  background-color: #F0F2F4;
+  font-family:PingFangSC-Regular,PingFang SC;
+}
+.list{
+  .item{
+    .date{
+      height: 36px;
+      padding: 8px 16px 0 16px;
+      font-size:14px;
+      line-height: 26px;
+      color:#929BA6;
+    }
+    .content{
+      padding: 0 16px;
+      background-color: #fff;
+      .name-status{
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name{
+          font-size: 16px;
+          font-weight:bold;
+          color:#000E20;
+        }
+        .status{
+          font-size:14px;
+          color:#949BA4;
+          line-height:20px;
+        }
+      }
+      .label{
+        font-size:14px;
+        font-weight:bold;
+        color:rgba(148,155,164,1);
+      }
+      .text{
+        margin-top: 4px;
+        font-size:14px;
+        color:#949BA4;
+        line-height: 17px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+}

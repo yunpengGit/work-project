@@ -1,0 +1,129 @@
+[
+  {
+    "groupId": 1234,
+    "groupName": "业务组件",
+    "showOrder": 1,
+    "components": [
+      {
+        "componentId": "Custom01",
+        "label": "多页签组件",
+        "componentName": "Custom",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/%E5%A4%9A%E9%A1%B5%E7%AD%BE%E7%BB%84%E4%BB%B6.png",
+        "showOrder": 10,
+        "w": 8,
+        "h": 25
+      },
+      {
+        "componentId": "Upcoming02",
+        "label": "待办",
+        "componentName": "Upcoming",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/%E5%BE%85%E5%8A%9E.png",
+        "showOrder": 11,
+        "w": 8,
+        "h": 25
+      },
+      {
+        "componentId": "ToBeRead03",
+        "label": "待阅",
+        "componentName": "ToBeRead",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/%E5%BE%85%E9%98%85.png",
+        "showOrder": 12,
+        "w": 8,
+        "h": 25
+      },
+      {
+        "componentId": "FocusWork04",
+        "label": "关注",
+        "componentName": "FocusWork",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/%E5%85%B3%E6%B3%A8%E5%B7%A5%E4%BD%9C.png",
+        "showOrder": 13,
+        "w": 8,
+        "h": 25
+      },
+      {
+        "componentId": "Notice05",
+        "label": "通知公告",
+        "componentName": "Notice",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/43cc9a97-25e4-471b-9285-3b6230469bcb.png",
+        "showOrder": 1,
+        "w": 4,
+        "h": 14
+      },
+      {
+        "componentId": "Schedule06",
+        "label": "日程",
+        "componentName": "Schedule",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/1d375cc2-47b7-4625-a4cc-aa4f3cdf1311.png",
+        "showOrder": 2,
+        "w": 4,
+        "h": 20
+      },
+      {
+        "componentId": "Email07",
+        "label": "未读邮件",
+        "componentName": "Email",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/dda3af40-45b1-418f-b2ff-2496b162f373.png",
+        "showOrder": 3,
+        "w": 8,
+        "h": 10
+      },
+      {
+        "componentId": "Application08",
+        "label": "常用应用",
+        "componentName": "Application",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/437da631-1873-44cf-a769-ea45736c18bb.png",
+        "showOrder": 4,
+        "w": 8,
+        "h": 10
+      },
+      {
+        "componentId": "CommonService09",
+        "label": "常办业务",
+        "componentName": "CommonService",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/c5edd55f-e338-474d-91cd-8aeca98f2d9a.png",
+        "showOrder": 5,
+        "w": 4,
+        "h": 10
+      },
+      {
+        "componentId": "Information10",
+        "label": "栏目资讯",
+        "componentName": "Information",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/zonghexinxi.png",
+        "showOrder": 6,
+        "w": 12,
+        "h": 26
+      },
+      {
+        "componentId": "CustomizeList11",
+        "label": "自定义通用列表",
+        "componentName": "CustomizeList",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/zonghexinxi.png",
+        "showOrder": 6,
+        "w": 12,
+        "h": 26,
+        "status": 2,
+        "componentAttr":"{\"reqParams\":{\"status\":\"2\",\"dataType\":\"1\",\"method\":\"GET\",\"url\":\"https://portal-in-api.avicnet.cn/portal/notice/view/list\",\"head\":\"\",\"refreshTime\":0},\"dataField\":[{\"field\":\"title\",\"label\":\"标题\",\"link\":\"http://baidu.com\",\"width\":\"60%\"},{\"field\":\"publishDate\",\"label\":\"时间\",\"link\":\"\",\"width\":\"30%\"}],\"showFieldLabel\":false,\"num\":true,\"showRefreshBtn\":true,\"showMoreBtn\":true,\"moreLink\":\"\"}"
+      },
+      {
+        "componentId": "CustomizeNews11",
+        "label": "自定义通用图文",
+        "componentName": "CustomizeNews",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/zonghexinxi.png",
+        "showOrder": 6,
+        "w": 12,
+        "h": 26,
+        "componentAttr":"{\"reqParams\":{\"dataType\":\"1\",\"method\":\"GET\",\"url\":\"home.noticeList\",\"head\":\"\",\"refreshTime\":0},\"dataField\":[{\"field\":\"title\",\"label\":\"标题\",\"link\":\"http://baidu.com\",\"width\":\"60%\"},{\"field\":\"publishDate\",\"label\":\"时间\",\"link\":\"\",\"width\":\"30%\"}],\"showFieldLabel\":false,\"num\":true,\"showRefreshBtn\":true,\"showMoreBtn\":true,\"moreLink\":\"\"}"
+      },
+      {
+        "componentId": "CustomList12",
+        "label": "栏目组件",
+        "componentName": "CustomList",
+        "iconUrl": "https://uap-dev.oss-cn-beijing.aliyuncs.com/zonghexinxi.png",
+        "showOrder": 6,
+        "w": 4,
+        "h": 14
+      }
+    ]
+  }
+]

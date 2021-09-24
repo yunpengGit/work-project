@@ -1,0 +1,51 @@
+$--border-color-light: rgba(25, 31, 36, 0.12) !default;
+
+/* Color
+-------------------------- */
+$--color-primary: #499CF8;
+$--color-text-primary: #191F24;
+
+/* Button
+-------------------------- */
+$--button-small-font-size: 14px;
+$--button-small-padding-vertical: 8px;
+$--button-small-padding-horizontal: 13px;
+$--button-default-font-color: #191F24;
+$--button-default-font-color: $--color-text-primary;
+$--button-small-padding-vertical: 8px;
+$--button-small-padding-horizontal: 17px;
+$--button-small-border-radius: 4px;
+
+/* Pagination
+-------------------------- */
+$--pagination-font-size: 12px;
+
+/* Input
+-------------------------- */
+$--input-small-font-size: 14px !default;
+
+/* Table
+-------------------------- */
+$--table-header-font-color: rgba(25, 31, 36);
+$--table-border-color: rgba(25, 31, 36, 0.08);
+$--table-row-hover-background-color: #F0F7FF;
+/* Menu
+--------------------------*/
+/// fontSize||Font|1
+$--menu-item-font-size: 16px !default;
+/// color||Color|0
+$--menu-item-font-color: #fff !default;
+/// color||Color|0
+$--menu-background-color: #00274C !default;
+$--menu-item-hover-fill: #0B3053 !default;
+
+
+/* Tab
+-------------------------- */
+$--tab-font-size: 15px !default;
+$--tab-border-line: 1px solid #1E89FF !default;
+$--tab-header-color-active: #1E89FF !default;
+$--tab-header-color: #191F24 !default;
+$--tab-vertical-header-width: 90px !default;
+
+@import "~@avic/golden-pc-ui/packages/theme-chalk/src/index";

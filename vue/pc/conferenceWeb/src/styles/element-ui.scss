@@ -1,0 +1,325 @@
+#app {
+
+  .app-header {
+    .el-badge__content.is-fixed {
+      top: 10px;
+    }
+  }
+
+  .el-dialog__body {
+    padding: 0 20px;
+  }
+
+  .el-dialog__footer {
+    padding: 10px 20px;
+  }
+
+  .el-date-editor .el-range-separator {
+    width: 10%;
+  }
+
+  .login-wrapper .login-box .el-input__inner {
+    padding: 0 45px;
+  }
+  .el-table th.gutter {
+    display: block !important;
+    width: 17px !important;
+    display: table-cell !important;
+  }
+
+  .upload-remove-delete-text{
+    .el-upload-list__item .el-icon-close-tip {
+      display: none !important;
+    }
+  }
+
+  .el-form-item--small .el-form-item__label {
+    line-height: 34px !important;
+  }
+
+
+  .el-table th {
+    background-color: #f5f5f5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: rgba(25, 31, 36, 0.8);
+  }
+  
+  .el-scrollbar__wrap{overflow-x: hidden;}
+  .hide .el-upload--picture-card {
+      display: none!important;
+      width:50px;
+      height:50px;
+  }
+  .marginleftClass .el-upload--picture-card {
+    width:70px;
+    height:70px;
+    line-height:70px;
+  }
+
+  .marginleftClass .el-upload-list--picture-card .el-upload-list__item-actions span + span {
+    margin-left: 5px;
+}
+
+  .marginleftClass .el-upload-list__item {
+    width:70px;
+    height:70px;
+  }
+  .jibenxinxiClass .is-left .el-tabs__item.is-active {
+    color: #1E89FF;
+    // background-color: rgba(25, 31, 36, 0.08);
+    
+    background: #EBF8FF;
+    box-shadow: -1px 0px 0px 0px rgba(25, 31, 36, 0.08);
+  }
+  .jibenxinxiClass .is-left {
+    margin-right: 0px;
+    border-right: none;
+    background-color:white;
+    
+    // height:70%;
+  }
+  .jibenxinxiClass .is-left .el-tabs__nav-scroll {
+    background-color:white!important;
+    border-right: solid white;
+  }
+ 
+  .jibenxinxiClass .is-top .el-tabs__item.is-active {
+    color: #191F24;
+    opacity: 1;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    line-height: 21px;
+    padding-top:12px;
+  }
+  .jibenxinxiClass .is-top .el-tabs__item {
+    color: #191F24;
+    opacity: 0.64;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    line-height: 21px;
+    padding-top:12px;
+  }
+  .conferenceFormClass .el-form-item__error{
+    margin-left: 5% !important;
+  }
+  .conferenceFormClass .daimaClass .el-form-item__error{
+    margin-left: 24% !important;
+  }
+  .el-table__body-wrapper.is-scrolling-none{
+    height: 100%!important;
+  }
+  .el-table__empty-text {
+    background-image: url(../assets/table-no-data.png);
+    background-repeat: no-repeat;
+    width:200px;
+    height:120px;
+    font-size: 16px;
+    // height:80px;
+    padding-top: 115px;
+    text-align: center;
+    margin-top:10px;
+  }
+
+  .canhuirenClass .is-top {
+    margin-right: 0px;
+    border-right: none;
+    
+    // height:70%;
+  }
+
+  .canhuirenClass .is-top .el-tabs__nav-scroll {
+    background-color:white!important;
+    border-right: solid white;
+  }
+  .canhuirenClass .is-top .el-tabs__nav {
+    padding-left:10px;
+  }
+
+  .canhuirenClass .is-top .el-tabs__active-bar {
+   background-color: #EBF8FF;
+   opacity: 0;
+  }
+  .canhuirenClass .el-tabs__header {
+    margin-bottom:8px!important;
+  }
+
+  .canhuirenClass .is-top .el-tabs__item.is-active {
+    color: #1E89FF;
+    // background-color: rgba(25, 31, 36, 0.08);
+    
+    background: #EBF8FF;
+    box-shadow: -1px 0px 0px 0px rgba(25, 31, 36, 0.08);
+    border-bottom: solid #1E89FF;
+    padding-right: 20px !important;
+  }
+
+  // .biangengjiluClass .is-top .el-tabs__nav-scroll {
+  //   background-color:white!important;
+  //   border-right: solid white;
+  // }
+
+  // .biangengjiluClass .is-top .el-tabs__active-bar {
+  //   opacity: 0;
+  //  }
+
+  // .biangengjiluClass .is-top .el-tabs__item.is-active {
+  //   color: #191F24;
+  // }
+  // .biangengjiluClass .is-top .el-tabs__item.is-active {
+  //   border-left: solid rgba(25, 31, 36, 0.08) 1px !important;
+  //   padding-left:5px !important;
+  //   color:#191F24 !important;
+  //   font-size: 17px !important;
+  //   font-family: PingFangSC-Medium, PingFang SC !important;
+  //   font-weight: 500 !important;
+  // }
+  // .biangengjiluClass .el-tabs__header {
+  //   margin-bottom:0px!important;
+  // }
+  .biangengjiluClass .el-timeline-item__wrapper {
+    padding-left:0px;
+    top: 0px;
+  }
+  .biangengjiluClass .el-card__body {
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+
+  .biangengjiluClass .el-timeline-item__node {
+    opacity: 0;
+  }
+  .biangengjiluClass .el-timeline-item__tail {
+    opacity: 0;
+  }
+
+  .logTypeDiv .is-top .el-tabs__nav-scroll {
+    background-color:white!important;
+    border-right: solid white;
+  }
+  .logTypeDiv .is-top .el-tabs__item {
+    padding: 1px 1px;
+  }
+  .logTypeDiv .is-top .el-tabs__item span {
+    font-size: 13px !important;
+  }
+
+  .logTypeDiv .is-top .el-tabs__item.is-active {
+    border-bottom: solid 1px;
+  }
+  .changeContentClass .el-scrollbar .el-scrollbar__wrap .el-scrollbar__view{
+    white-space: nowrap;
+ }
+
+ .el-transfer__buttons .el-transfer__button {
+  display: block;
+  margin-left: 0px;
+ }
+ .el-transfer-panel__body {
+   height:500px;
+ }
+ .el-transfer-panel__list  {
+   height: 100%
+ }
+
+ .canhuirenTaabClass .el-tabs__item {
+   width: 140px;
+   text-align: center;
+ }
+ .overviewClass .el-progress--circle {
+   height: 100%;
+ }
+ .overviewClass .el-progress-circle {
+  height: 100% !important;
+}
+.overviewClass .el-progress-circle svg {
+  height: 100% !important;
+}
+
+.el-drawer__header span:focus {
+  outline: 0;
+}
+
+.el-upload-list--picture-card .el-icon-close-tip{
+  display: none !important;
+}
+.widthClass .el-cascader__tags .el-tag span {
+  max-width:50px;
+}
+
+.el-tooltip__popper {
+  max-width: 500px;
+}
+
+.importClass .el-upload {
+  display: block;
+}
+
+.importClass .el-upload .el-upload-dragger {
+  width: 100%
+}
+
+.daimaClass .el-form-item__label:before{
+  display: none;
+}
+
+::v-deep :focus {
+	outline: 0;
+}
+
+.el-table--scrollable-y {
+  padding-bottom: 40px;
+}
+
+
+.el-image-viewer__close {
+  color: white!important;
+}
+
+// .tableTagClass {
+//   display: -webkit-box !important;
+//     -webkit-line-clamp: 1 !important;
+//     -webkit-box-orient: vertical !important;
+//     overflow: hidden !important;
+//     max-width: 100% !important;
+// }
+
+// .el-table .cell {
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+// }
+// .el-table .el-tag--light {
+//   display: -webkit-box;
+//   -webkit-line-clamp: 1;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+// }
+
+//  ::-webkit-scrollbar  
+//  {  
+//      width: 16px !important;  /*滚动条宽度*/
+//      height: 16px !important;  /*滚动条高度*/
+//  }  
+   
+//  /*定义滚动条轨道 内阴影+圆角*/  
+//  ::-webkit-scrollbar-track  
+//  {  
+//      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;  
+//      border-radius: 10px !important;  /*滚动条的背景区域的圆角*/
+//      background-color: red !important;/*滚动条的背景颜色*/  
+//  }  
+   
+//  /*定义滑块 内阴影+圆角*/  
+//  ::-webkit-scrollbar-thumb  
+//  {  
+//      border-radius: 10px !important;  /*滚动条的圆角*/
+//      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3) !important;  
+//      background-color: green !important;  /*滚动条的背景颜色*/
+//  }
+
+}

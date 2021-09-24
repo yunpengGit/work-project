@@ -1,0 +1,235 @@
+<!--
+ * @Descripttion:
+ * @Author: pengpeng
+ * @Date: 2021-04-06 09:24:09
+ * @LastEditors: pengpeng
+ * @LastEditTime: 2021-05-21 14:09:14
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui" charset="UTF-8">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta content="telephone=no" name="format-detection" />
+	<title>人员动态</title>
+	<script src="./js/iconfont.js"></script>
+	<script src="./js/flexible.js"></script>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	</head>
+<body>
+	<div class="search-block">
+		<div class="search-box">
+			<span class="search-icon">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#sousuo"></use>
+				</svg>
+			</span>
+			<input type="text" class="name" placeholder="请输入同事姓名">
+			<span class="delete-icon">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#shanchu"></use>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div class="nav-tab">
+		<span class="active">部门人员动态</span>
+		<span>总部全员动态</span>
+		<span>历史全员动态</span>
+	</div>
+	<div class="list" id="list">
+		<div class="item">
+			<div class="content">
+				<div class="name-status">
+					<span class="name">张三</span>
+					<span class="status">
+						<span class="text xjsq">休假申请<span class="daishen">待审</span></span>
+					</span>
+				</div>
+				<div class="date">
+					<span class="date-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shijian"></use>
+						</svg>
+					</span>
+					<span class="time">预计时间：2021/3/17 - 2021/3/31</span></div>
+				<div class="doc">
+					<span class="text-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shuoming"></use>
+						</svg>
+					</span>
+					<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="content">
+				<div class="name-status">
+					<span class="name">张三</span>
+					<span class="status"><span class="text swcc">市外出差</span></span>
+				</div>
+				<div class="date">
+					<span class="date-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shijian"></use>
+						</svg>
+					</span>
+					<span class="time">预计时间：2021/3/17 - 2021/3/31</span></div>
+				<div class="doc">
+					<span class="text-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shuoming"></use>
+						</svg>
+					</span>
+					<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="content">
+				<div class="name-status">
+					<span class="name">张三</span>
+					<span class="status"><span class="text wckh">外出开会</span></span>
+				</div>
+				<div class="date">
+					<span class="date-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shijian"></use>
+						</svg>
+					</span>
+					<span class="time">预计时间：2021/3/17 - 2021/3/31</span></div>
+				<div class="doc">
+					<span class="text-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shuoming"></use>
+						</svg>
+					</span>
+					<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="content">
+				<div class="name-status">
+					<span class="name">张三</span>
+					<span class="status"><span class="text snbs">市内办事</span></span>
+				</div>
+				<div class="date">
+					<span class="date-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shijian"></use>
+						</svg>
+					</span>
+					<span class="time">预计时间：2021/3/17 - 2021/3/31</span></div>
+				<div class="doc">
+					<span class="text-icon">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#shuoming"></use>
+						</svg>
+					</span>
+					<div class="text">请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示请集团领批示</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="btn-box">
+		<button>登记去向</button>
+	</div>
+	<script id="tpl-user" type="text/html">
+		{{each target}}
+    {{$index}} {{$value}}
+			<div class="item">
+				<div class="content">
+					<div class="name-status">
+						<span class="name">{{$value.fd_user_name}}</span>
+						<span class="status">
+							<span class="text xjsq">休假申请<span class="daishen">待审</span></span>
+						</span>
+					</div>
+					<div class="date">
+						<span class="date-icon">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#shijian"></use>
+							</svg>
+						</span>
+						<span class="time">预计时间：{{$value.fd_out_start_time}} - {{$value.fd_out_end_time}}</span></div>
+					<div class="doc">
+						<span class="text-icon">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#shuoming"></use>
+							</svg>
+						</span>
+						<div class="text">{{$value.fd_business_trip_reason}}</div>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</script>
+	<script src="./js/zepto.min.js"></script>
+	<script src="js/template-web.js"></script>
+	<script src="js/dropload.mini.js"></script>
+	<script>
+		$(function(){
+			$('.delete-icon').on('click',function(){
+				$('.name').val('')
+			})
+			$('.nav-tab span').on('click',function(){
+				$(this).siblings().removeClass('active')
+				$(this).addClass('active')
+			})
+
+			var page = 0;
+			// 每页展示5个
+			var size = 5;
+
+			// dropload
+			$('.content').dropload({
+					scrollArea : window,
+					loadDownFn : function(me){
+							page++;
+							// 拼接HTML
+							var result = '';
+							$.ajax({
+									type: 'GET',
+									url: 'http://ons.me/tools/dropload/json.php?page='+page+'&size='+size,
+									dataType: 'json',
+									success: function(data){
+											var arrLen = data.length;
+											if(arrLen > 0){
+													for(var i=0; i<arrLen; i++){
+															result +=   '<a class="item opacity" href="'+data[i].link+'">'
+																							+'<img src="'+data[i].pic+'" alt="">'
+																							+'<h3>'+data[i].title+'</h3>'
+																							+'<span class="date">'+data[i].date+'</span>'
+																					+'</a>';
+													}
+											// 如果没有数据
+											}else{
+													// 锁定
+													me.lock();
+													// 无数据
+													me.noData();
+											}
+											// 为了测试，延迟1秒加载
+											setTimeout(function(){
+													// 插入数据到页面，放到最后面
+													$('.lists').append(result);
+													// 每次数据插入，必须重置
+													me.resetload();
+											},1000);
+									},
+									error: function(xhr, type){
+											alert('Ajax error!');
+											// 即使加载出错，也得重置
+											me.resetload();
+									}
+							});
+					}
+			});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+// 1px border
+.border1px(@position: bottom, @color: #eeeeef) {
+  &::after {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    .position(@position);
+    border-@{position}: 1px solid @color;
+  }
+}
+.position(@position) when (@position = bottom){
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: scaleY(0.5);
+}
+.position(@position) when (@position = top){
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: scaleY(0.5);
+}
+.position(@position) when (@position = right){
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scaleX(0.5);
+}
+.position(@position) when (@position = left){
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0.5);
+}
+// 多行点点点
+.line-hide(@line:2){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  line-clamp: @line;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}

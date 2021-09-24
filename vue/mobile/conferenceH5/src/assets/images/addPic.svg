@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>添加</title>
+    <desc>Created with Sketch.</desc>
+    <g id="会务组" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0825-1.1创建会议活动" transform="translate(-159.000000, -409.000000)" fill="#BCBCBC">
+            <g id="编组-3" transform="translate(0.000000, 110.000000)">
+                <g id="列表备份-3" transform="translate(20.000000, 262.000000)">
+                    <g id="编组-5" transform="translate(90.000000, 17.000000)">
+                        <g id="添加" transform="translate(49.000000, 20.000000)">
+                            <path d="M10,0 C10.5522847,3.38176876e-17 11,0.44771525 11,1 L10.999,9 L19,9 C19.5522847,9 20,9.44771525 20,10 C20,10.5522847 19.5522847,11 19,11 L10.999,11 L11,19 C11,19.5522847 10.5522847,20 10,20 C9.44771525,20 9,19.5522847 9,19 L8.999,11 L1,11 C0.44771525,11 6.76353751e-17,10.5522847 0,10 C-6.76353751e-17,9.44771525 0.44771525,9 1,9 L8.999,9 L9,1 C9,0.44771525 9.44771525,-3.38176876e-17 10,0 Z" id="形状结合"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

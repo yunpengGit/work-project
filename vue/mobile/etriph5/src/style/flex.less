@@ -1,0 +1,147 @@
+/**
+ * css3属性选择器
+ * [flex]选择带有flex（自定义）属性的元素
+ * [flex~='dir:row'] 选择flex属性含有字符串'dir:row'的元素
+ */
+[flex] {
+  display: flex;
+}
+
+[flex] > * {
+  display: block;
+  overflow: hidden;
+}
+
+[flex] > [flex] {
+  display: flex;
+}
+
+//垂直排列，起点在上面
+[flex~='dir:column'] {
+  flex-direction: column;
+}
+
+//垂直排列，起点在下面
+[flex~='dir:column-reverse'] {
+  flex-direction: column-reverse;
+}
+
+//横向排列，起点在左侧
+[flex~='dir:row'] {
+  flex-direction: row;
+}
+
+//横向排列，起点在右侧
+[flex~='dir:row-reverse'] {
+  flex-direction: row-reverse;
+}
+
+//从主轴(横轴)开始的方向排序
+[flex~='main:start'] {
+  justify-content: flex-start;
+}
+
+//在主轴(横轴)上自动居中
+[flex~='main:center'] {
+  justify-content: center;
+}
+
+//从主轴(横轴)结束的方向排序
+[flex~='main:end'] {
+  justify-content: flex-end;
+}
+
+//在主轴上(横轴)平均分布
+[flex~='main:between'] {
+  justify-content: space-between;
+}
+
+//在主轴上分布，两端的子项距离父边框的距离相等 = 子项之间的距离相等 / 2
+[flex~='main:around'] {
+  justify-content: space-around;
+}
+
+/* 针对单行的对齐方式*/
+
+//交叉轴的开始端排列
+[flex~='cross:start'] {
+  align-items: flex-start;
+}
+
+//在交叉轴上居中
+[flex~='cross:center'] {
+  align-items: center;
+}
+
+//交叉轴的底端排序
+[flex~='cross:end'] {
+  align-items: flex-end;
+}
+
+//保证子项的文本基线统一
+[flex~='cross:baseline'] {
+  align-items: baseline;
+}
+
+//在交叉轴上拉伸，纵向铺满
+[flex~='cross:stretch'] {
+  align-items: stretch;
+}
+
+/* 针对多行的对齐方式*/
+
+//交叉轴的开始端排列
+[flex~='align:start'] {
+  align-content: flex-start;
+}
+
+//交叉轴的底端排序
+[flex~='align:end'] {
+  align-content: flex-end;
+}
+
+//在交叉轴上居中
+[flex~='align:center'] {
+  align-content: center;
+}
+
+//在交叉轴上平均分布
+[flex~='align:between'] {
+  align-content: space-between;
+}
+
+//在交叉轴上分布，两端的子项距离父边框的距离相等 = 子项之间的距离相等 / 2
+[flex~='align:around'] {
+  align-content: space-around;
+}
+
+//在交叉轴上平均拉伸，纵向铺满
+[flex~='align:stretch'] {
+  align-content: stretch;
+}
+
+//子项超出换行
+[flex~='wrap:wrap'] {
+  flex-wrap: wrap;
+}
+
+//子项超出压缩不换行
+[flex~='wrap:nowrap'] {
+  flex-wrap: nowrap;
+}
+
+//子项超出反转换行排列
+[flex~='wrap:reverse'] {
+  flex-wrap: wrap-reverse;
+}
+
+[flex-item~='0'] {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+[flex-item~='1'] {
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

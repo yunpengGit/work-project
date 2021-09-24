@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D2DDF9" offset="0%"></stop>
+            <stop stop-color="#7A9DF0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F7F0E4" offset="0%"></stop>
+            <stop stop-color="#F5DFA1" offset="100%"></stop>
+        </linearGradient>
+        <polyline id="path-3" points="13.565864 9.45190296 18.565864 9.60875721 18.565864 20.6087572"></polyline>
+        <filter x="-150.9%" y="-67.6%" width="400.9%" height="234.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.423934014   0 0 0 0 0.518731966   0 0 0 0 0.79076087  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-会议首页" transform="translate(-2477.000000, -1251.000000)">
+            <g id="报名/已通过" transform="translate(2477.000000, 1251.000000)">
+                <g transform="translate(18.000000, 18.000000) scale(1, -1) rotate(-90.000000) translate(-18.000000, -18.000000) ">
+                    <rect id="蒙版" fill="#FDFDFE" opacity="0.01" x="2.27373675e-13" y="0" width="36" height="36"></rect>
+                    <circle id="椭圆形" fill="#DEECFE" cx="18" cy="19" r="13"></circle>
+                    <rect id="矩形" fill="url(#linearGradient-1)" x="10" y="3" width="17" height="23" rx="1"></rect>
+                    <g id="路径" stroke-linecap="round" stroke-linejoin="round" transform="translate(16.065864, 15.030330) rotate(-315.000000) translate(-16.065864, -15.030330) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use stroke="url(#linearGradient-2)" stroke-width="3" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

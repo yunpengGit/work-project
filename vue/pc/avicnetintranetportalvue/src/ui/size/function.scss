@@ -1,0 +1,12 @@
+@function vw($px){
+  @return ($px / 1920px) * 100vw;
+}
+
+@function percent($a, $b){
+  @return ($a / $b) * 100%;
+}
+
+/* 新增字体大小缩放比例函数 */
+@function sizeScale($from,$to){
+  @return $to/$from
+}

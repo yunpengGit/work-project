@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/System/二维码</title>
+    <defs>
+        <radialGradient cx="73.5193389%" cy="21.1034283%" fx="73.5193389%" fy="21.1034283%" r="107.841375%" id="radialGradient-1">
+            <stop stop-color="#2DEF85" offset="0.0454989347%"></stop>
+            <stop stop-color="#08C94B" offset="100%"></stop>
+        </radialGradient>
+        <path d="M27,25 C27.5522848,25 28,25.4477153 28,26 L28,27 C28,27.5522847 27.5522848,28 27,28 L26,28 C25.4477153,28 25,27.5522847 25,27 L25,26 C25,25.4477153 25.4477153,25 26,25 L27,25 Z M21,25 C21.5522848,25 22,25.4477153 22,26 L22,27 C22,27.5522847 21.5522848,28 21,28 L20,28 C19.4477153,28 19,27.5522847 19,27 L19,26 C19,25.4477153 19.4477153,25 20,25 L21,25 Z M15.5,19 C16.3284271,19 17,19.6715729 17,20.5 L17,26.5 C17,27.3284271 16.3284271,28 15.5,28 L9.50000001,28 C8.67157289,28 8.00000001,27.3284271 8.00000001,26.5 L8.00000001,20.5 C8.00000001,19.6715729 8.67157289,19 9.50000001,19 L15.5,19 Z M24,22 C24.5522848,22 25,22.4477153 25,23 L25,24 C25,24.5522847 24.5522848,25 24,25 L23,25 C22.4477153,25 22,24.5522847 22,24 L22,23 C22,22.4477153 22.4477153,22 23,22 L24,22 Z M27,19 C27.5522848,19 28,19.4477153 28,20 L28,21 C28,21.5522847 27.5522848,22 27,22 L26,22 C25.4477153,22 25,21.5522847 25,21 L25,20 C25,19.4477153 25.4477153,19 26,19 L27,19 Z M21,19 C21.5522848,19 22,19.4477153 22,20 L22,21 C22,21.5522847 21.5522848,22 21,22 L20,22 C19.4477153,22 19,21.5522847 19,21 L19,20 C19,19.4477153 19.4477153,19 20,19 L21,19 Z M15.5,8 C16.3284271,8 17,8.67157288 17,9.5 L17,15.5 C17,16.3284271 16.3284271,17 15.5,17 L9.50000001,17 C8.67157289,17 8.00000001,16.3284271 8.00000001,15.5 L8.00000001,9.5 C8.00000001,8.67157288 8.67157289,8 9.50000001,8 L15.5,8 Z M26.5,8 C27.3284271,8 28,8.67157288 28,9.5 L28,15.5 C28,16.3284271 27.3284271,17 26.5,17 L20.5,17 C19.6715729,17 19,16.3284271 19,15.5 L19,9.5 C19,8.67157288 19.6715729,8 20.5,8 L26.5,8 Z" id="path-2"></path>
+        <filter x="-35.0%" y="-25.0%" width="170.0%" height="170.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0392156863   0 0 0 0 0.796078431   0 0 0 0 0.301960784  0 0 0 0.288564829 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="10" y="10" width="5" height="5" rx="0.5"></rect>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.755549504 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="10" y="21" width="5" height="5" rx="0.5"></rect>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.755549504 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="21" y="10" width="5" height="5" rx="0.5"></rect>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0548907952   0 0 0 0 0.806959512   0 0 0 0 0.193429769  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="会议工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="参会人报名成功备份-5" transform="translate(-213.000000, -266.000000)">
+            <g id="编组备份-3" transform="translate(12.000000, 256.000000)">
+                <g id="编组-10" transform="translate(175.000000, 0.000000)">
+                    <g id="Icon/System/二维码" transform="translate(26.000000, 10.000000)">
+                        <g id="形状结合备份-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="矩形备份-24">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill-opacity="0.96" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <g id="矩形备份-23">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill-opacity="0.96" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                        <g id="矩形备份-22">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                            <use fill-opacity="0.96" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                        </g>
+                        <rect id="矩形备份-17" fill="#13E06D" x="11" y="11" width="3" height="3"></rect>
+                        <rect id="矩形备份-18" fill="#13E06D" x="11" y="22" width="3" height="3"></rect>
+                        <rect id="矩形备份-19" fill="#13E06D" x="22" y="11" width="3" height="3"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

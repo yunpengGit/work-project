@@ -1,0 +1,93 @@
+{
+  "name": "avicnetintranetportalvue",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --hot",
+    "build": "vue-cli-service build",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:stage": "vue-cli-service build --mode staging",
+    "lint": "vue-cli-service lint",
+    "commit": "git pull && node ./node_modules/@wenzh/cz-customizable/standalone.js && git push"
+  },
+  "dependencies": {
+    "@avic/golden-pc-ui": "^1.4.9",
+    "@riophae/vue-treeselect": "^0.4.0",
+    "@tinymce/tinymce-vue": "^3.2.4",
+    "axios": "^0.21.1",
+    "clipboard": "2.0.4",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.10.4",
+    "echarts": "4.2.1",
+    "file-saver": "^2.0.5",
+    "fuse.js": "3.4.4",
+    "js-base64": "^3.6.0",
+    "js-cookie": "^2.2.1",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.throttle": "^4.1.1",
+    "normalize.css": "7.0.0",
+    "nprogress": "^0.2.0",
+    "qs": "^6.9.6",
+    "tinymce": "^5.6.2",
+    "vue": "^2.6.11",
+    "vue-clipboard2": "^0.3.1",
+    "vue-cropper": "^0.5.6",
+    "vue-router": "^3.5.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "@babel/runtime-corejs3": "^7.14.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@wenzh/cz-customizable": "^6.3.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-flow-comments": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "2.4.2",
+    "connect": "3.6.6",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10"
+    ],
+    "development": [
+      "> 1%",
+      "last 2 versions"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/@wenzh/cz-customizable"
+    }
+  }
+}

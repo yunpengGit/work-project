@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>切片</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <linearGradient x1="80.5888926%" y1="47.1142507%" x2="24.6433899%" y2="57.2109498%" id="linearGradient-3">
+            <stop stop-color="#FEDB76" offset="0%"></stop>
+            <stop stop-color="#F9E8AA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#A31410" offset="0%"></stop>
+            <stop stop-color="#FE8B4A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1,0 L7.96370492,0 C8.64065636,-1.24353962e-16 9.27166151,0.342437684 9.64059216,0.910023299 L11.1618043,3.25034967 C11.7152003,4.10172809 12.661708,4.61538462 13.6771351,4.61538462 L21,4.61538462 C22.1045695,4.61538462 23,5.51081512 23,6.61538462 L23,25 C23,25.5522847 22.5522847,26 22,26 L1,26 C0.44771525,26 6.76353751e-17,25.5522847 0,25 L0,1 C-1.78657678e-16,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="path-5"></path>
+        <polyline id="path-7" points="5 16 8.25 13 13.6666667 16 18 11.5"></polyline>
+        <filter x="-57.0%" y="-164.8%" width="214.1%" height="429.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.640172101   0 0 0 0 0   0 0 0 0 0.078514649  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="202108版-会议首页" transform="translate(-2695.000000, -648.000000)">
+            <g id="金刚区" transform="translate(2618.000000, 648.000000)">
+                <g id="编组-23" transform="translate(71.000000, 0.000000)">
+                    <g id="会议首页icon/会议资料-红" transform="translate(6.000000, 0.000000)">
+                        <g id="会议首页icon/会议资料">
+                            <g>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="蒙版" fill="#FFFFFF" xlink:href="#path-1"></use>
+                                <g id="编组-40" mask="url(#mask-2)">
+                                    <g transform="translate(9.000000, 14.000000)" id="矩形备份-7">
+                                        <g transform="translate(0.000000, -0.000000)">
+                                            <path d="M9,1 L20,1 C21.1045695,1 22,1.8954305 22,3 L22,5 L22,5 L9,5 L9,1 Z" id="矩形" fill="url(#linearGradient-3)"></path>
+                                            <mask id="mask-6" fill="white">
+                                                <use xlink:href="#path-5"></use>
+                                            </mask>
+                                            <use id="蒙版" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                                            <g id="路径" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-6)">
+                                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                                <use stroke="#FFFFFF" stroke-width="2" xlink:href="#path-7"></use>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+# 由于每个 job 执行都会删除之前生成的依赖包和打包文件,在重新下载耗费时间,所以将这些需要依赖的job合并
+# 因为在 job 存在缓存文件,删除之前的包再下载, 可能会处理不妥当会造成下一个job依赖上一个job文件被删除而导致的文件不存在
+
+#stages 表示整个 CI 流程分为几个阶段，每个阶段中可以运行多个 job
+stages:
+  - install-build-deploy
+
+cache: #&cache #设置一个锚点
+  #因为缓存为不同管道和任务间共享，可能会覆盖，所以有时需要设置key
+  key: "modules"  # 启用每分支缓存。
+  policy: pull
+  # untracked: true    #缓存所有Git未跟踪的文件
+  paths:    #以下2个文件夹会被缓存起来，下次构建会解压出来
+    - node_modules/
+    - build/
+
+#安装依赖任务
+job-install-build-deploy:
+  stage: install-build-deploy
+  cache: #&cache #设置一个锚点
+    # policy: pull
+    untracked: true    #缓存所有Git未跟踪的文件
+    paths:    #以下2个文件夹会被缓存起来，下次构建会解压出来
+      - node_modules/
+      - build/
+  # cache:
+  #   #引用cache并合并到当前数据
+  #   <<: *cache         # 利用锚'templateDef'来合并
+  script:                    #script 秒速的是该任务需要做那些事情
+    - echo "开始安装依赖..."
+    - yarn config set registry https://registry.npm.taobao.org/ -g
+    # - yarn config set registry https://registry.yarnpkg.com/ -g
+    - yarn install
+    - echo "完成所有依赖包的安装"
+    - echo "开始编译打包"
+    - yarn build
+    - echo "打包成功"
+    - echo "开始部署打包代码"
+    - scp -P 22 -r ./build/* /usr/share/nginx/html/
+    - echo "部署成功"
+  only:
+    - master                # 只有在 master 被 push 或者 merge 时才触发任务"job_install"
+  tags:
+    - mailbox-hierarchical-management-test       # Gitlab 服务器会根据这个 tag 找到对应的 runner 来执行当前任务
